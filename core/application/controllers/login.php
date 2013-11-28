@@ -1,31 +1,33 @@
-<?php
+<?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Login extends Controller {
+class Login extends CI_Controller {
+    
+    function __construct()
+    {
+        parent::__construct();
+        $this->load->helper(array('form', 'url'));
+    }
 	
-	function __construct() {
-		parent::Controller();
-	}
 
-	function doLogin() {
+	function doLogin() {	
 	
-		$this->load->plugin('tools');
 		
 		$strUserName = $this->input->post('username', TRUE);
 		$strPassword = $this->input->post('password', TRUE);
 		
 		if ( empty($strUserName) || empty($strPassword) ) {
-			ToJSONMsg("ERR", "Debe especificar usuario y contraseña");
+			$this->tools->ToJSONMsg("ERR", "Debe especificar usuario y contraseña");
 			return;
 		}
 			
 		try {
 			$this->auth->loginRoutine($strUserName, $strPassword);
 		} catch ( Exception $e ) {
-			ToJSONMsg("ERR", $e->getMessage());
+			$this->tools->ToJSONMsg("ERR", $e->getMessage());
 			return;
 		}
 			
-		ToJSONMsg("OK", "");
+		$this->tools->ToJSONMsg("OK", "");
 		
 	}
 	

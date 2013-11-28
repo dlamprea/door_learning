@@ -5,53 +5,58 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Squeleto</title>    
     <link rel="stylesheet" type="text/css" href="assets/styles//style.css">     
+    <link rel="stylesheet" type="text/css" href="//code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css">     
     
-
-    <script type="text/javascript" src="assets/js/jquery.js"></script>      
+    
+     <script type="text/javascript" src="assets/js/jquery.js"></script>      
+    <script src="//code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
     <script type="text/javascript" src="assets/js/default.js"></script>         
     <script type="text/javascript" src="assets/js/common.js"></script>      
+    <script type="text/javascript" src="assets/js/login.js"></script>      
     
+<script type="text/javascript">
+        var Base_URL = "<?php echo base_url() ?>";
+        var Front_URL = "<?php echo site_url() ?>";
+</script>
      
 </head>
 <body>
+<?php
+    if( ! empty($Msg) ){
+        echo "<div id='divMsg'>$Msg</div>";
+    }
+?>
 
-    <header>
-        <nav>
-            <ul>
-                <li>Your menu</li>
-            </ul>
-        </nav>
-    </header>
-     <?php echo CI_VERSION; ?>
-    <section>
+<div id="divLogin">
+
+    <form action="#" id="frmLogin" class="frmLogin" >
+
+    <fieldset>
+
+    <div id="divLoginHeader"></div>
+    <p>     
+        <label for="username">Usuario:</label>
+        <input name="username" type="text" class="required text" id="username" maxlength="20" />
+    </p>
+    <p>
+        <label for="password">Clave:</label>
+        <input name="password" type="password" class="required text" id="password" maxlength="20" />
+    </p>
     
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
-        
-        <article>
-            <header>
-                <h2>Article title</h2>
-                <p>Posted on <time datetime="2009-09-04T16:31:24+02:00">September 4th 2009</time> by <a href="#">Writer</a> - <a href="#comments">6 comments</a></p>
-            </header>
-            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-        </article>
-        
-    </section>
+    <div align="right" id="div_submit">
+        <input type="button" value="Entrar" class="button" id="btnLogin" />
+    </div>
+    
+    </fieldset>
 
-    <aside>
-        <h2>About section</h2>
-        <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
-    </aside>
+  </form>
+  
+</div>
 
-    <footer>
-        <p>Copyright 2009 Your name</p>
-    </footer>
+
+<div id="divError" style="display:none"></div>
 
 </body>
+
 
 </html>

@@ -4,8 +4,7 @@ function InitCommon(){
 	$.ui.dialog.prototype.options.modal = true;
 	$.ui.dialog.prototype.options.autoOpen = false;
 	$.ui.dialog.prototype.options.closeOnEscape = false;
-	
-	$.alerts.bgiframe = true;
+		
 	
 	$.ajaxSetup({
 		type:	"post",

@@ -14,7 +14,11 @@
 | path to your installation.
 |
 */
-$config['base_url']	= "http://" . $_SERVER['HTTP_HOST'] . "/name-app/";
+$config['base_url']	= "http://" . $_SERVER['HTTP_HOST'] . "/door_learning/";
+
+
+$config['auth_mode'] =  "DATABASE";	# LDAP o DATABASE
+$config['dev_mode'] =  TRUE;		# Saltarse la validacion en el LDAP
 
 /*
 |--------------------------------------------------------------------------

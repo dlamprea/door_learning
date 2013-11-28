@@ -52,11 +52,11 @@ $active_record = TRUE;
 // $db['default']['username'] = 'kronos';
 // $db['default']['password'] = 'ezequiel..2013';
 
-$db['default']['hostname'] = '';
-$db['default']['username'] = '';
+$db['default']['hostname'] = 'localhost';
+$db['default']['username'] = 'root';
 $db['default']['password'] = '';
 
-$db['default']['database'] = '';
+$db['default']['database'] = 'db_barpos';
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
