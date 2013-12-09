@@ -19,11 +19,25 @@ class app extends CI_Controller {
    * @see http://codeigniter.com/user_guide/general/urls.html
    */
   
-    public function index()
-    {
-      $objView="hola";
-      $this->load->view('index', $objView);
+    function index() {
+    
+    try {
+      $arrPerfiles = array("2","ASESOR","VALIDADOR","BACKOFFICE");      
+      $this->auth->isLoggedIn($arrPerfiles);
+
+    } catch ( Exception $e ){
+      $objView->Msg = $e->getMessage();
+      $this->load->view('login',$objView);
+      return;
     }
+     $data['page_title'] = 'View Shopping Cart';
+
+        // Load data view into layout with extra data
+    $this->layout->view('index.php', $data);
+    //$objView->URL_Frame = site_url("main/app_main");
+    //$this->load->view("home",null);
+    
+  }
 
 
 }

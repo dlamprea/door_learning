@@ -103,8 +103,9 @@ class Usuarios_mdl extends DB_Table {
 	}
 	
 	function addLog( $objData ) {
-		
-		$bolAction = $this->db->insert('tbl_usuarioslog',$objData);
+		$this->load->database();
+
+		$bolAction = $this->db->insert('log',$objData);
 		
 		if ( $bolAction == FALSE ) {
 			throw new Exception ("Error interno de la aplicacion, al registrar el log de Conexion.");

@@ -21,7 +21,7 @@ function Init() {
 }
 
 function doLogin(){
-	
+
 	var UsrName = $("#username").val();
 	var PssWrd = $("#password").val();
 

@@ -10,10 +10,10 @@ class Login extends CI_Controller {
 	
 
 	function doLogin() {	
-	
 		
 		$strUserName = $this->input->post('username', TRUE);
 		$strPassword = $this->input->post('password', TRUE);
+
 		
 		if ( empty($strUserName) || empty($strPassword) ) {
 			$this->tools->ToJSONMsg("ERR", "Debe especificar usuario y contraseña");
@@ -21,13 +21,12 @@ class Login extends CI_Controller {
 		}
 			
 		try {
-			$this->auth->loginRoutine($strUserName, $strPassword);
+			$log=$this->auth->loginRoutine($strUserName, $strPassword);		
 		} catch ( Exception $e ) {
 			$this->tools->ToJSONMsg("ERR", $e->getMessage());
 			return;
 		}
-			
-		$this->tools->ToJSONMsg("OK", "");
+		$this->tools->ToJSONMsg("OK","");
 		
 	}
 	

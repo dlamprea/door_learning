@@ -1,0 +1,46 @@
+Version 2.0.0 - 17/10/2013
+- Added: Bootstrap 3.x Compatibility
+- Updated: jQuery to latest version
+- Updated: Bootbox to latest version
+- Updated: jquery.sparklines.js from v2.1.1 to v2.1.2
+- Updated: jQuery from 1.8.2 to 1.10.2
+- Updated: UnifromJS from 1.7.9 to 2.1.1
+- Updated: Plupload from 1.5.4 to 2.0.0
+- Updated: fullcalendar from 1.5.4 to 1.6.4
+- Updated: EasyPieChart from 1.0.1 to 2.0.4
+- Updated: Glyphicons 470+ icons
+- Removed: Twitter API
+- Removed: Google Analytics API
+- Removed: Infinite Scroll
+- Removed: Boostrap 2.x Compatibility
+
+Version 1.2.1 – 02/10/2013
+
+- Added: Social Elements in Pages
+- Fixed: scrollbar bug
+- Fixed: draggable events on fullcalendar
+- Fixed: text selection/highlighting
+- Fixed: scrollbar in invoice PRINT
+- Removed : PHP Version
+
+
+
+Version 1.2.0 - 22/07/2013
+- Fixed: IE8 issues
+- Fixed: IE9 issues
+- Fixed: IE10 issues
+- Fixed: Styling issues in Login & Signup pages - Front module - when using AJAX
+- Fixed: Typo issue in Login pages - Admin module
+- Fixed: Google Maps & Vector Maps
+- Updated: jQuery Sparkline to v2.1.2
+- Added: New configurable sidebar menu size - mini/wide by default
+- Added: New configurable sidebar menu option - enable/disable auto-toggle on hover
+
+Version 1.1.0 - 18/07/2013
+- Added: New Sticky Bottom Main Menu
+- Added: Mega menu (responsive 12 column grid system & support for any HTML content)
+- Added: Configurable option for horizontal menu position (Top or Bottom) - PHP only
+- Fixed: Responsive CSS media queries breaking the Front module
+
+Version 1.0.0 - 17/07/2013
+- Initial Release

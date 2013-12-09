@@ -1,0 +1,1545 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="ie lt-ie9 lt-ie8 lt-ie7 fixed top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"> <![endif]-->
+<!--[if IE 7]>    <html class="ie lt-ie9 lt-ie8 fixed top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"> <![endif]-->
+<!--[if IE 8]>    <html class="ie lt-ie9 fixed top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"> <![endif]-->
+<!--[if gt IE 8]> <html class="animations ie gt-ie8 fixed top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"> <![endif]-->
+<!--[if !IE]><!--><html class="animations fixed top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"><!-- <![endif]-->
+<head>
+	<title>FLAT KIT (v2.0.0)</title>
+	
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
+	
+	<!-- Bootstrap -->
+	<link href="../../../../../common/bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<link href="../../../../../common/bootstrap/css/responsive.css" rel="stylesheet" type="text/css" />
+	
+	<!-- Glyphicons Font Icons -->
+	<link href="../../../../../common/theme/fonts/glyphicons/css/glyphicons_regular.css" rel="stylesheet" />
+	<link href="../../../../../common/theme/fonts/glyphicons/css/glyphicons_social.css" rel="stylesheet" />
+	<link href="../../../../../common/theme/fonts/glyphicons/css/glyphicons_filetypes.css" rel="stylesheet" />
+	
+
+	<link rel="stylesheet" href="../../../../../common/theme/fonts/font-awesome/css/font-awesome.min.css">
+	<!--[if IE 7]><link rel="stylesheet" href="../../../../../common/theme/fonts/font-awesome/css/font-awesome-ie7.min.css"><![endif]-->
+	
+	<!-- Uniform Pretty Checkboxes -->
+	<link href="../../../../../common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css" rel="stylesheet" />
+	
+	<!-- PrettyPhoto -->
+    <link href="../../../../../common/theme/scripts/plugins/gallery/prettyphoto/css/prettyPhoto.css" rel="stylesheet" />
+    
+    <!-- JQuery -->
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+	<!--[if lt IE 9]>
+      <script src="../../../../../common/theme/scripts/plugins/system/html5shiv.js"></script>
+    <![endif]-->
+	
+	<!-- Bootstrap Extended -->
+	<link href="../../../../../common/bootstrap/extend/jasny-fileupload/css/fileupload.css" rel="stylesheet">
+	<link href="../../../../../common/bootstrap/extend/bootstrap-wysihtml5/css/bootstrap-wysihtml5-0.0.2.css" rel="stylesheet">
+	<link href="../../../../../common/bootstrap/extend/bootstrap-select/bootstrap-select.css" rel="stylesheet" />
+	<link href="../../../../../common/bootstrap/extend/bootstrap-switch/static/stylesheets/bootstrap-switch.css" rel="stylesheet" />
+	
+	<!-- DateTimePicker Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/forms/bootstrap-datetimepicker/css/datetimepicker.css" rel="stylesheet" />
+	
+	<!-- JQueryUI -->
+	<link href="../../../../../common/theme/scripts/plugins/system/jquery-ui/css/smoothness/jquery-ui-1.9.2.custom.min.css" rel="stylesheet" />
+	
+	<!-- MiniColors ColorPicker Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.css" rel="stylesheet" />
+	
+	<!-- Notyfy Notifications Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.css" rel="stylesheet" />
+	<link href="../../../../../common/theme/scripts/plugins/notifications/notyfy/themes/default.css" rel="stylesheet" />
+	
+	<!-- Gritter Notifications Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/notifications/Gritter/css/jquery.gritter.css" rel="stylesheet" />
+	
+	<!-- Easy-pie Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.css" rel="stylesheet" />
+
+	<!-- Google Code Prettify Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/other/google-code-prettify/prettify.css" rel="stylesheet" />
+	
+	<!-- Select2 Plugin -->
+	<link href="../../../../../common/theme/scripts/plugins/forms/select2/select2.css" rel="stylesheet" />
+
+	<!-- Pageguide Guided Tour Plugin -->
+	<!--[if gt IE 8]><!--><link media="screen" href="../../../../../common/theme/scripts/plugins/other/pageguide/css/pageguide.css" rel="stylesheet" /><!--<![endif]-->
+
+	<!-- Main Theme Stylesheet :: CSS -->
+	<link href="../../../../../common/theme/css/style-default-menus-light.css?1382019482" rel="stylesheet" type="text/css" />
+	
+	
+	<!-- FireBug Lite -->
+	<!-- <script src="https://getfirebug.com/firebug-lite-debug.js"></script> -->
+
+	<!-- LESS.js Library -->
+	<script src="../../../../../common/theme/scripts/plugins/system/less.min.js"></script>
+	
+	<!-- Global -->
+	<script>
+	//<![CDATA[
+	var basePath = '',
+		commonPath = '../../../../../common/';
+
+	// colors
+	var primaryColor = '#e5412d',
+		dangerColor = '#b55151',
+		successColor = '#609450',
+		warningColor = '#ab7a4b',
+		inverseColor = '#45484d';
+
+	var themerPrimaryColor = primaryColor;
+	//]]>
+	</script>
+</head>
+<body class="document-body ">
+	
+		<!-- Main Container Fluid -->
+	<div class="container-fluid menu-hidden sidebar-hidden-phone fixed menu-left">
+		
+				<!-- Sidebar menu & content wrapper -->
+		<div id="wrapper">
+		
+		<!-- Sidebar Menu -->
+		<div id="menu" class="hidden-print">
+		
+			<!-- Brand -->
+			<a href="index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="appbrand"><span class="text-primary">FLAT</span> <span>KIT</span></a>
+		
+			<!-- Scrollable menu wrapper with Maximum height -->
+			<div class="slim-scroll" data-scroll-height="800px">
+			
+				<!-- Menu Toggle Button -->
+				<button type="button" class="btn btn-navbar">
+					<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+				</button>
+				<!-- // Menu Toggle Button END -->
+				
+				<!-- Sidebar Profile -->
+				<span class="profile center">
+					<a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown"><img src="../../../../../common/theme/images/avatar-74x74.jpg" alt="Avatar" /></a>
+				</span>
+				<!-- // Sidebar Profile END -->
+				
+				<!-- Menu -->
+				<ul>
+				
+										
+					<li><a href="index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons dashboard"><i></i><span>Dashboard</span></a></li>
+<li class="dropdown dd-1 active">
+	<a href="" data-toggle="dropdown" class="glyphicons settings"><i></i><span>Components</span><span class="icon-chevron-right"></span></a>
+	<ul class="dropdown-menu pull-left">
+	
+		<!-- Components Submenu Level 2 -->
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle">Forms</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="form_wizards.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Wizards</a></li>
+				<li class=""><a href="form_elements.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Elements</a></li>
+				<li class=""><a href="form_validator.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Validator</a></li>
+				<li class=""><a href="file_managers.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">File Managers</a></li>
+			</ul>
+		</li>
+		<!-- // Components Submenu Level 2 END -->
+		
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle">Tables</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="tables.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Tables</a></li>
+				<li class=""><a href="tables_responsive.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Responsive Tables</a></li>
+				<li class=""><a href="pricing_tables.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Pricing tables</a></li>
+			</ul>
+		</li>
+		
+		<!-- Components Submenu Regular Items -->
+		<li class=""><a href="ui.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">UI Elements</a></li>
+		<li class=""><a href="icons.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Icons</a></li>
+		<li class=" active"><a href="widgets.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Widgets</a></li>
+		<li class=""><a href="tabs.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Tabs</a></li>
+		<li class=""><a href="sliders.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Sliders</a></li>
+		<li class=""><a href="charts.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Charts</a></li>
+		<li class=""><a href="grid.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Grid system</a></li>
+		<li class=""><a href="notifications.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Notifications</span></a></li>
+		<li class=""><a href="modals.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Modals</a></li>
+		<li class=""><a href="thumbnails.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Thumbnails</a></li>
+		<li class=""><a href="carousels.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Carousels</a></li>
+		<li class=""><a href="image_crop.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Image Cropping</a></li>
+		<li class=""><a href="tour.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Page Tour</a></li>
+		
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle">APIs</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="twitter.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Twitter API</a></li>
+				<li class=""><a href="google_analytics.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Google Analytics API</a></li>
+			</ul>
+		</li>
+		
+		<li class=""><a href="infinite_scroll.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Infinite Scroll</a></li>
+		<!-- // Components Submenu Regular Items END -->
+		
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle glyphicons circle_info"><i></i>4 Level Menu</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class="dropdown submenu">
+					<a data-toggle="dropdown" href="#" class="dropdown-toggle">Menu item</a>
+					<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+						<li><a href="#">Menu item</a></li>
+					</ul>
+				</li>
+			</ul>
+		</li>
+	</ul>
+</li>
+<li class="dropdown dd-1">
+	<a href="" data-toggle="dropdown" class="glyphicons notes"><i></i><span>Pages</span><span class="icon-chevron-right"></span></a>
+	<ul class="dropdown-menu pull-left">
+		
+		<li><a href="timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons history"><i></i>Timeline</a></li>
+		<li><a href="employees.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons group"><i></i>Employees</a></li>
+		
+				<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle glyphicons user"><i></i>Front</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li><a class="no-ajaxify" href="../front/index_slider.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Revolution Slider Fixed</a></li>
+				<li><a class="no-ajaxify" href="../front/index_slider_fullwidth.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Revolution Slider Wide</a></li>
+				<li><a class="no-ajaxify" href="../front/index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Home page #1</a></li>
+				<li><a class="no-ajaxify" href="../front/index_2.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Home page #2</a></li>
+				<li><a class="no-ajaxify" href="../front/about.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">About us</a></li>
+				<li><a class="no-ajaxify" href="../front/pricing.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Pricing</a></li>
+				<li><a class="no-ajaxify" href="../front/blog.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Blog</a></li>
+				<li><a class="no-ajaxify" href="../front/blog_timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Blog Timeline</a></li>
+				<li><a class="no-ajaxify" href="../front/shop.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shop Catalog</a></li>
+				<li><a class="no-ajaxify" href="../front/shop_product.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shop Product</a></li>
+				<li><a class="no-ajaxify" href="../front/shop_cart.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shopping Cart</a></li>
+				<li><a class="no-ajaxify" href="../front/contact.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Contact</a></li>
+				<li><a class="no-ajaxify" href="../front/login.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Login</a></li>
+				<li><a class="no-ajaxify" href="../front/signup.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Sign up</a></li>
+				<li><a class="no-ajaxify" href="../front/error.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Error page</a></li>
+			</ul>
+		</li>
+				
+		<li><a href="invoice.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons credit_card"><i></i>Invoice</a></li>
+		<li><a href="faq.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons circle_question_mark"><i></i>FAQ</a></li>
+		<li><a href="search.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons search"><i></i>Search</a></li>
+		<li><a href="ratings.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons star"><i></i>Ratings</a></li>
+		
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle glyphicons user"><i></i>Account</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Advanced profile</a></li>
+				<li class=""><a href="my_account.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">My Account</a></li>
+				<li><a href="login.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown"><i></i>Login</a></li>
+				<li><a href="signup.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown"><i></i>Register</a></li>
+			</ul>
+		</li>
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle glyphicons google_maps"><i></i>Maps</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="maps_vector.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Vector maps</a></li>
+				<li class=""><a href="maps_google.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Google maps</a></li>
+			</ul>
+		</li>
+		<li class="dropdown submenu">
+			<a data-toggle="dropdown" class="dropdown-toggle glyphicons shopping_cart"><i></i>Online Shop</a>
+			<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+				<li class=""><a href="shop_products.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Products</a></li>
+				<li class=""><a href="shop_edit_product.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Add product</a></li>
+				<li class=""><a href="shop_orders_timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Orders Timeline</a></li>
+			</ul>
+		</li>
+		<li><a href="typography.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons font"><i></i>Typography</a></li>
+		<li><a href="gallery.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons picture"><i></i>Photo Gallery</a></li>
+		<li><a href="calendar.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons calendar"><i></i>Calendar</a></li>
+		<li><a href="bookings.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons user_add"><i></i>Bookings</a></li>
+		<li><a href="finances.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons coins"><i></i>Finances</a></li>
+		<li><a href="error.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons warning_sign"><i></i>Error page</a></li>
+		<li><a href="blank.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons magic"><i></i>Blank page</a></li>
+	</ul>
+</li>					
+				</ul>
+				<div class="clearfix"></div>
+				<!-- // Menu END -->
+				
+				<div class="menu-hidden-element alert alert-primary">
+					<a class="close" data-dismiss="alert">&times;</a>
+					<p>Integer quis tempor mi. Donec venenatis dui in neque fringilla at iaculis libero ullamcorper. In velit sem, sodales id hendrerit ac, fringilla et est.</p>
+				</div>
+			
+			</div>
+			<!-- // Scrollable Menu wrapper with Maximum Height END -->
+			
+		</div>
+		<!-- // Sidebar Menu END -->
+				
+		<!-- Content -->
+		<div id="content">
+		
+				<!-- Top navbar -->
+		<div class="navbar main hidden-print">
+		
+			<!-- Menu Toggle Button -->
+			<button type="button" class="btn btn-navbar pull-left visible-xs">
+				<span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span>
+			</button>
+			<!-- // Menu Toggle Button END -->
+			
+						<!-- Not Blank page -->
+			
+						<!-- Full Top Style -->
+			<ul class="topnav pull-left">
+				<li><a href="index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons dashboard"><i></i> Dashboard</a></li>
+				<li class="dropdown dd-1 active">
+					<a href="" data-toggle="dropdown" class="glyphicons settings"><i></i>Components <span class="caret"></span></a>
+					<ul class="dropdown-menu pull-left">
+					
+						<!-- Components Submenu Level 2 -->
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle">Forms</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a href="form_wizards.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Wizards</a></li>
+								<li class=""><a href="form_elements.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Elements</a></li>
+								<li class=""><a href="form_validator.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Form Validator</a></li>
+								<li class=""><a href="file_managers.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">File Managers</a></li>
+							</ul>
+						</li>
+						<!-- // Components Submenu Level 2 END -->
+						
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle">Tables</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a href="tables.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Tables</a></li>
+								<li class=""><a href="tables_responsive.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Responsive Tables</a></li>
+								<li class=""><a href="pricing_tables.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Pricing tables</a></li>
+							</ul>
+						</li>
+						
+						<!-- Components Submenu Regular Items -->
+						<li class=""><a href="ui.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">UI Elements</a></li>
+						<li class=""><a href="icons.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Icons</a></li>
+						<li class=" active"><a href="widgets.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Widgets</a></li>
+						<li class=""><a href="tabs.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Tabs</a></li>
+						<li class=""><a href="sliders.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Sliders</a></li>
+						<li class=""><a href="charts.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Charts</a></li>
+						<li class=""><a href="grid.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Grid system</a></li>
+						<li class=""><a href="notifications.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Notifications</span></a></li>
+						<li class=""><a href="modals.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Modals</a></li>
+						<li class=""><a href="thumbnails.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Thumbnails</a></li>
+						<li class=""><a href="carousels.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Carousels</a></li>
+						<li class=""><a href="image_crop.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Image Cropping</a></li>
+						<li class=""><a href="tour.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Page Tour</a></li>
+						
+						<!-- <li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle">APIs</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a href="twitter.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Twitter API</a></li>
+								<li class=""><a href="google_analytics.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Google Analytics API</a></li>
+							</ul>
+						</li> -->
+						
+						<li class=""><a href="infinite_scroll.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Infinite Scroll</a></li>
+						<!-- // Components Submenu Regular Items END -->
+						
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle glyphicons circle_info"><i></i>4 Level Menu</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class="dropdown submenu">
+									<a data-toggle="dropdown" href="#" class="dropdown-toggle">Menu item</a>
+									<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+										<li><a href="#">Menu item</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+				<li class="dropdown dd-1">
+					<a href="" data-toggle="dropdown" class="glyphicons notes"><i></i>Pages <span class="caret"></span></a>
+					<ul class="dropdown-menu pull-left">
+						<li><a href="social.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons star"><i></i>Social</a></li>
+						
+						<li><a href="timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons history"><i></i>Timeline</a></li>
+						<li><a href="employees.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons group"><i></i>Employees</a></li>
+						
+												<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle glyphicons user"><i></i>Front</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li><a class="no-ajaxify" href="../front/index_slider.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Revolution Slider Fixed</a></li>
+								<li><a class="no-ajaxify" href="../front/index_slider_fullwidth.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Revolution Slider Wide</a></li>
+								<li><a class="no-ajaxify" href="../front/index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Home page #1</a></li>
+								<li><a class="no-ajaxify" href="../front/index_2.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Home page #2</a></li>
+								<li><a class="no-ajaxify" href="../front/about.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">About us</a></li>
+								<li><a class="no-ajaxify" href="../front/pricing.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Pricing</a></li>
+								<li><a class="no-ajaxify" href="../front/blog.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Blog</a></li>
+								<li><a class="no-ajaxify" href="../front/blog_timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Blog Timeline</a></li>
+								<li><a class="no-ajaxify" href="../front/shop.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shop Catalog</a></li>
+								<li><a class="no-ajaxify" href="../front/shop_product.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shop Product</a></li>
+								<li><a class="no-ajaxify" href="../front/shop_cart.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Shopping Cart</a></li>
+								<li><a class="no-ajaxify" href="../front/contact.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Contact</a></li>
+								<li><a class="no-ajaxify" href="../front/login.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Login</a></li>
+								<li><a class="no-ajaxify" href="../front/signup.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Sign up</a></li>
+								<li><a class="no-ajaxify" href="../front/error.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Error page</a></li>
+							</ul>
+						</li>
+												
+						<li><a href="invoice.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons credit_card"><i></i>Invoice</a></li>
+						<li><a href="faq.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons circle_question_mark"><i></i>FAQ</a></li>
+						<li><a href="search.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons search"><i></i>Search</a></li>
+						<li><a href="ratings.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons star"><i></i>Ratings</a></li>
+						
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle glyphicons user"><i></i>Account</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Advanced profile</a></li>
+								<li class=""><a href="my_account.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">My Account</a></li>
+								<li><a href="login.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown"><i></i>Login</a></li>
+								<li><a href="signup.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown"><i></i>Register</a></li>
+							</ul>
+						</li>
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle glyphicons google_maps"><i></i>Maps</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a class="no-ajaxify" href="maps_vector.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Vector maps</a></li>
+								<li class=""><a class="no-ajaxify" href="maps_google.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Google maps</a></li>
+							</ul>
+						</li>
+						<li class="dropdown submenu">
+							<a data-toggle="dropdown" class="dropdown-toggle glyphicons shopping_cart"><i></i>Online Shop</a>
+							<ul class="dropdown-menu submenu-show submenu-hide pull-right">
+								<li class=""><a href="shop_products.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Products</a></li>
+								<li class=""><a href="shop_edit_product.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Add product</a></li>
+								<li class=""><a href="shop_orders_timeline.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Orders Timeline</a></li>
+							</ul>
+						</li>
+						<li><a href="typography.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons font"><i></i>Typography</a></li>
+						<li><a href="gallery.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons picture"><i></i>Photo Gallery</a></li>
+						<li><a href="calendar.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons calendar"><i></i>Calendar</a></li>
+						<li><a href="bookings.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons user_add"><i></i>Bookings</a></li>
+						<li><a href="finances.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons coins"><i></i>Finances</a></li>
+						<li><a href="error.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons warning_sign"><i></i>Error page</a></li>
+						<li><a href="blank.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons magic"><i></i>Blank page</a></li>
+					</ul>
+				</li>
+				<li class="mega-menu">
+					<a href="#" class="glyphicons sheriffs_star"><i></i> Mega menu</a>
+					<div class="mega-sub">
+						<div class="mega-sub-inner">
+							<div class="row"> 
+								<div class="col-md-2">
+									<h4><i class="icon-book icon-fixed-width text-primary"></i> Learning</h4>
+									<ul class="icons-ul">
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Catch the Bullet</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Snoopydoo</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Fallen Angel</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Sui Maker</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Wave Master</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Golf Pro</a></li>
+									</ul>
+								</div>
+								<div class="col-md-2">
+									<h4><i class="icon-wrench icon-fixed-width text-primary"></i> Utilities</h4>
+									<ul class="icons-ul">
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Gadget Finder</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Green Tree Express</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Green Tree Pro</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Wobbler 3.0</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Coolkid</a></li>
+									</ul>
+								</div>
+								<div class="col-md-3">
+									<h4><i class="icon-android icon-fixed-width text-primary"></i> Education</h4>
+									<ul class="icons-ul">
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Learn Thai</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Math Genius</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Chemokid</a></li>
+									</ul>
+									<h4><i class="icon-apple icon-fixed-width text-primary"></i> Professionals</h4>
+									<ul class="icons-ul">
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Success 1.0</a></li>
+										<li><a href="#"><span class="icon-li icon-arrow-right"></span> Moneymaker</a></li>
+									</ul>
+								</div>
+								<div class="col-md-5">
+									<div class="innerTB innerR">
+									    <div class="glyphicons glyphicon-xlarge glyphicon-top sheriffs_star glyphicon-primary">
+								        	<i></i>
+								        	<h4>Support for any type of content</h4>
+									        <p class="margin-none">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+									            <br> <a href="">learn more</a>
+									        </p>
+									    </div>
+									</div>
+								</div>
+							</div>
+						</div><!-- /cbp-hrsub-inner -->
+					</div><!-- /cbp-hrsub -->
+				</li>
+			</ul>
+			<!-- // Full Top Style END -->
+						
+			<!-- // Not Blank Page END -->
+						
+						
+						<!-- Top Menu Right -->
+			<ul class="topnav pull-right hidden-sm">
+			
+								<!-- Themer -->
+				<li><a href="#themer" data-toggle="collapse" class="glyphicons eyedropper single-icon"><i></i></a></li>
+				<!-- // Themer END -->
+								
+				<!-- Language menu -->
+				<li class="hidden-xs dropdown dd-1 dd-flags" id="lang_nav">
+					<a href="#" data-toggle="dropdown"><img src="../../../../../common/theme/images/lang/en.png" alt="en" /></a>
+			    	<ul class="dropdown-menu pull-right">
+			      		<li class="active"><a href="?module=admin&amp;page=widgets&amp;url_rewrite=&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown&amp;lang=en" title="English"><img src="../../../../../common/theme/images/lang/en.png" alt="English"> English</a></li>
+			      		<li><a href="?module=admin&amp;page=widgets&amp;url_rewrite=&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown&amp;lang=ro" title="Romanian"><img src="../../../../../common/theme/images/lang/ro.png" alt="Romanian"> Romanian</a></li>
+			      		<li><a href="?module=admin&amp;page=widgets&amp;url_rewrite=&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown&amp;lang=it" title="Italian"><img src="../../../../../common/theme/images/lang/it.png" alt="Italian"> Italian</a></li>
+			      		<li><a href="?module=admin&amp;page=widgets&amp;url_rewrite=&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown&amp;lang=fr" title="French"><img src="../../../../../common/theme/images/lang/fr.png" alt="French"> French</a></li>
+			      		<li><a href="?module=admin&amp;page=widgets&amp;url_rewrite=&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown&amp;lang=pl" title="Polish"><img src="../../../../../common/theme/images/lang/pl.png" alt="Polish"> Polish</a></li>
+			    	</ul>
+				</li>
+				<!-- // Language menu END -->
+			
+				<!-- Profile / Logout menu -->
+				<li class="account dropdown dd-1">
+										<a data-toggle="dropdown" href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons logout lock"><span class="hidden-md hidden-sm hidden-desktop-1">mosaicpro</span><i></i></a>
+					<ul class="dropdown-menu pull-right">
+						<li><a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons cogwheel">Settings<i></i></a></li>
+						<li><a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons camera">My Photos<i></i></a></li>
+						<li class="profile">
+							<span>
+								<span class="heading">Profile <a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="pull-right text-primary text-weight-regular">edit</a></span>
+								<a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="img thumb">
+									<img src="../../../../../common/theme/images/avatar-51x51.jpg" alt="Avatar" />
+								</a>
+								<span class="details">
+									<a href="my_account_advanced.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="strong text-regular">Mosaic Pro</a>
+									contact@mosaicpro.biz
+								</span>
+								<span class="clearfix"></span>
+							</span>
+						</li>
+						<li>
+							<span>
+								<a class="btn btn-default btn-mini pull-right" href="login.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown">Sign Out</a>
+							</span>
+						</li>
+					</ul>
+									</li>
+				<!-- // Profile / Logout menu END -->
+				
+			</ul>
+			<!-- // Top Menu Right END -->
+			
+			<ul class="topnav pull-right hidden-sm">
+				<li><a href="" class="glyphicons envelope single-icon"><i></i><span class="badge fix badge-primary">5</span></a></li>
+				<li><a href="" class="glyphicons cup single-icon"><i></i><span class="badge fix badge-primary">7</span></a></li>
+				<li class="hidden-sm"><a href="" class="glyphicons comments single-icon"><i></i><span class="badge fix badge-primary">3</span></a></li>
+			</ul>
+						<div class="clearfix"></div>
+			
+		</div>
+		<!-- Top navbar END -->
+				
+	<ul class="breadcrumb">
+	<li>You are here</li>
+	<li><a href="index.html?lang=en&amp;layout_type=fixed&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;sidebar_type=dropdown" class="glyphicons dashboard"><i></i> FLAT KIT</a></li>
+	<li class="divider"><i class="icon-caret-right"></i></li>
+	<li>Components</li>
+	<li class="divider"><i class="icon-caret-right"></i></li>
+	<li>Widgets</li>
+</ul>
+
+<h1>Statistical Widgets <span>with over 400 icons!</span></h1>
+
+<!-- Stats Widgets -->
+<div class="innerLR">
+
+	<!-- Widget -->
+	<div class="widget widget-heading-simple widget-body-simple">
+			
+		<!-- Widget Heading -->
+		<div class="widget-head">
+			<h4 class="heading glyphicons warning_sign"><i></i>Alerts</h4>
+		</div>
+		<!-- // Widget Heading END -->
+		
+		<div class="widget-body">
+
+			<!-- Row -->
+			<div class="row">
+				<div class="col-md-2">
+				
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-gray widget-stats-1">
+						<span class="glyphicons cart_in"><i></i><span class="txt">Sales</span></span>
+						<div class="clearfix"></div>
+						<span class="count">20</span>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+				<div class="col-md-2">
+				
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-1">
+						<span class="glyphicons shield"><i></i><span class="txt">Alerts</span></span>
+						<div class="clearfix"></div>
+						<span class="count">125</span>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+				<div class="col-md-2">
+				
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-gray widget-stats-2">
+						<span class="count">2</span>
+						<span class="txt">Orders</span>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+				<div class="col-md-2">
+				
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-2">
+						<span class="count">30</span>
+						<span class="txt">Bookings</span>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+				<div class="col-md-2">
+			
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-gray widget-stats-2 widget-stats-easy-pie txt-single">
+						<div data-percent="85" class="easy-pie inverse"><span class="value">85</span>%</div>
+						<span class="txt">Workload</span>
+						<div class="clearfix"></div>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+				<div class="col-md-2">
+				
+					<!-- Stats Widget -->
+					<a href="" class="widget-stats widget-stats-2 widget-stats-easy-pie txt-single">
+						<div data-percent="90" class="easy-pie primary"><span class="value">90</span>%</div>
+						<span class="txt">Completed</span>
+						<div class="clearfix"></div>
+					</a>
+					<!-- // Stats Widget END -->
+					
+				</div>
+			</div>
+			<!-- // Row END -->
+			
+			<span class="btn outside btn-toggle-code btn-mini btn-primary btn-icon glyphicons embed_close" data-toggle="hide" data-target="#code-6"><i></i> Source</span>
+		</div>
+	</div>
+	
+	<div class="separator bottom"></div>
+	<!-- // Stats Widgets END -->
+	
+<!-- Stats Widgets Code Sample -->
+<div class="code hide" id="code-6">
+<pre class="prettyprint lang-html">
+&lt;!-- Stats #1: Gray --&gt;
+&lt;a href="" class="widget-stats widget-stats-gray widget-stats-1"&gt;
+	&lt;span class="glyphicons cart_in"&gt;&lt;i&gt;&lt;/i&gt;&lt;span class="txt"&gt;Sales&lt;/span&gt;&lt;/span&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+	&lt;span class="count"&gt;20&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Stats #1: White --&gt;
+&lt;a href="" class="widget-stats widget-stats-1"&gt;
+	&lt;span class="glyphicons shield"&gt;&lt;i&gt;&lt;/i&gt;&lt;span class="txt"&gt;Alerts&lt;/span&gt;&lt;/span&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+	&lt;span class="count"&gt;125&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Stats #2: Gray --&gt;
+&lt;a href="" class="widget-stats widget-stats-gray widget-stats-2"&gt;
+	&lt;span class="count"&gt;2&lt;/span&gt;
+	&lt;span class="txt"&gt;Orders&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Stats #2: White --&gt;
+&lt;a href="" class="widget-stats widget-stats-2"&gt;
+	&lt;span class="count"&gt;30&lt;/span&gt;
+	&lt;span class="txt"&gt;Bookings&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Stats Pie: Gray --&gt;
+&lt;a href="" class="widget-stats widget-stats-gray widget-stats-2 widget-stats-easy-pie txt-single"&gt;
+	&lt;div data-percent="85" class="easy-pie danger"&gt;&lt;span class="value"&gt;85&lt;/span&gt;%&lt;/div&gt;
+	&lt;span class="txt"&gt;Workload&lt;/span&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/a&gt;
+
+&lt;!-- Stats Pie: White --&gt;
+&lt;a href="" class="widget-stats widget-stats-2 widget-stats-easy-pie txt-single"&gt;
+	&lt;div data-percent="90" class="easy-pie success"&gt;&lt;span class="value"&gt;90&lt;/span&gt;%&lt;/div&gt;
+	&lt;span class="txt"&gt;Completed&lt;/span&gt;
+	&lt;div class="clearfix"&gt;&lt;/div&gt;
+&lt;/a&gt;
+</pre>
+</div>
+<!-- // Stats Widgets Code Sample END -->
+
+	<p class="separator text-center"><i class="icon-ellipsis-horizontal icon-3x"></i></p>
+
+	<!-- Wells -->
+	<h3>Wells <span>Lightweight utility</span></h3>
+	<div class="row">
+		<div class="col-md-4">
+			<div class="well margin-none">
+				<address class="margin-none">
+					<h2>John Doe</h2>
+					<strong>Business manager</strong> at 
+					<strong><a href="#">Business</a></strong><br> 
+					<abbr title="Work email">e-mail:</abbr> <a href="mailto:#">john.doe@mybiz.com</a><br /> 
+					<abbr title="Work Phone">phone:</abbr> (012) 345-678-901<br/>
+					<abbr title="Work Fax">fax:</abbr> (012) 678-132-901
+					<div class="separator bottom"></div>
+					<p class="margin-none"><strong>You can also find us:</strong><br/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique rutrum libero, vel bibendum nunc consectetur sed.</p>
+				</address>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="well margin-none">
+				<h2>Wells are cool</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+				<p class="margin-none">Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			</div>
+		</div>
+		<div class="col-md-4">
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="well margin-none"&gt;
+	&lt;address class="margin-none"&gt;
+		&lt;h2&gt;John Doe&lt;/h2&gt;
+		&lt;strong&gt;Business manager&lt;/strong&gt; at 
+		&lt;strong&gt;&lt;a href="#"&gt;Business&lt;/a&gt;&lt;/strong&gt;&lt;br/&gt; 
+		&lt;abbr title="Work email"&gt;e-mail:&lt;/abbr&gt; &lt;a href="mailto:#"&gt;john.doe@mybiz.com&lt;/a&gt;&lt;br/&gt; 
+		&lt;abbr title="Work Phone"&gt;phone:&lt;/abbr&gt; (012) 345-678-901&lt;br/&gt;
+		&lt;abbr title="Work Fax"&gt;fax:&lt;/abbr&gt; (012) 678-132-901
+		&lt;div class="separator line"&gt;&lt;/div&gt;
+		&lt;p class="margin-none"&gt;&lt;strong&gt;You can also find us:&lt;/strong&gt;&lt;br/&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique rutrum libero, vel bibendum nunc consectetur sed.&lt;/p&gt;
+	&lt;/address&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+		
+		</div>
+	</div>
+	<div class="separator bottom"></div>
+	<!-- // Wells END -->
+	
+	<p class="separator text-center"><i class="icon-collapse icon-3x"></i></p>
+	
+	<!-- Collapsible Widgets -->
+	<h3>Collapsible Widgets <span>Make any widget collapsible</span></h3>
+	<div class="row">
+		<div class="col-md-4">
+			
+			<!-- Collapsible Widget -->
+			<div class="widget" data-toggle="collapse-widget">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+				</div>
+			</div>
+			<!-- // Collapsible Widget END -->
+			
+		</div>
+		<div class="col-md-4">
+			
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						<!-- Collapsible Widget (closed by default) -->
+			<div class="widget" data-toggle="collapse-widget" data-collapse-closed="true">
+				<div class="widget-head"><h4 class="heading">Collapsible widget</h4></div>
+				<div class="widget-body">
+					Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+				</div>
+			</div>
+			<!-- // Collapsible Widget (closed by default) END -->
+						
+		</div>
+		<div class="col-md-4">
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget" data-toggle="collapse-widget" data-collapse-closed="true"&gt;
+	&lt;div class="widget-head"&gt;&lt;h4 class="heading"&gt;Collapsible widget&lt;/h4&gt;&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		Nunc vitae diam eget arcu rutrum euismod ...
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+
+			<strong>How:</strong> Just attach the HTML5 attribute <code>data-toggle="collapse-widget"</code> to any regular widget, and to make it closed by default, just add <code>data-collapse-closed="true"</code>
+		
+		</div>
+	</div>
+	<div class="separator bottom"></div>
+	<!-- // Collapsible Widgets END -->
+	
+	<p class="separator text-center"><i class="icon-time icon-3x"></i></p>
+	
+	<!-- Timeline Widgets -->
+	<h3>Timeline Widgets <span>vizualize events in time with style</span></h3>
+	<div class="row">
+		<div class="col-md-8">
+			
+			<!-- Timeline Widget -->
+			<div class="widget-timeline">
+				<ul class="list-timeline">
+					
+															<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Melisa Ragae</a> registered at <a href="">Jane Doe's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Darius Jackson</a> registered at <a href="">Jane Doe's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">Darius Jackson's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">John Doe's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">Darius Jackson's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										<!-- Item -->
+					<li>
+						<span class="date">21/03</span>
+						<span class="glyphicons activity-icon user_add"><i></i></span>
+						<span class="ellipsis"><a href="">Martin Glades</a> registered at <a href="">Jane Doe's</a> suggestion.</span>
+						<div class="clearfix"></div>
+					</li>
+					<!-- // Item END -->
+										
+				</ul>
+				<a href="" class="btn btn-primary view-all">View all</a>
+			</div>
+			<!-- Timeline Widget END -->
+			
+		</div>
+		<div class="col-md-4">
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget-timeline"&gt;
+	&lt;ul class="list-timeline"&gt;
+		&lt;li&gt;
+			&lt;span class="date"&gt;21/03&lt;/span&gt;
+			&lt;span class="glyphicons activity-icon user_add"&gt;&lt;i&gt;&lt;/i&gt;&lt;/span&gt;
+			&lt;span class="ellipsis"&gt;&lt;a href=""&gt;Jessica&lt;/a&gt; registered at &lt;a href=""&gt;John's&lt;/a&gt; suggestion.&lt;/span&gt;
+			&lt;div class="clearfix"&gt;&lt;/div&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+	&lt;a href="" class="btn btn-primary view-all"&gt;View all&lt;/a&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+		
+		</div>
+	</div>
+	<!-- // Collapsible Widgets END -->
+</div>
+<div class="separator bottom"></div>
+
+<div class="innerLR"><p class="separator text-center"><i class="icon-ellipsis-horizontal icon-3x"></i></p></div>
+
+<h3>Other Widgets</h3>
+<div class="innerLR">
+	<div class="row">
+		<div class="col-md-6">
+		
+			<!-- Widget -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="widget widget-heading-simple widget-body-gray">
+					<div class="widget-head"><h4 class="heading glyphicons magic"><i></i>Widget: Simple heading + Icon + Gray body</h4></div>
+					<div class="widget-body">
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget END -->
+			
+			<!-- Widget -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="widget widget-heading-simple widget-body-white">
+					<div class="widget-head"><h4 class="heading glyphicons magic"><i></i>Widget: Simple heading + Icon + White body</h4></div>
+					<div class="widget-body">
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget END -->
+			
+			<!-- Widget -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="widget">
+					<div class="widget-head"><h4 class="heading">Widget</h4></div>
+					<div class="widget-body">
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget END -->
+			
+			<!-- Widget With Progress Bar -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="widget">
+					<div class="widget-head progress progress-primary" id="widget-progress-bar">
+						<div class="bar">Lorem ipsum <strong>dolor</strong> - <strong class="steps-percent">100%</strong></div>
+					</div>
+					<div class="widget-body">
+						<h4>Progress Widget</h4>
+						<p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget With Progress Bar END -->
+			
+		</div>
+		<div class="col-md-6">
+
+
+		
+			<!-- Accordion Default -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="panel-group" id="accordion">
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+				          Collapsible Group Item #1
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseOne" class="panel-collapse collapse in">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+				          Collapsible Group Item #2
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-default">
+				    <div class="panel-heading">
+				      <h4 class="panel-title">
+				        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+				          Collapsible Group Item #3
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse">
+				      <div class="panel-body">
+				        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<!-- // Accordion Default END -->
+
+
+			<div class="separator bottom"></div>
+
+			<!-- Accordion #2 Style -->
+			<div class="relativeWrap" data-toggle="source-code">
+				<div class="accordion accordion-2" id="tabAccountAccordion">
+				
+					<!-- Accordion Item -->
+					<div class="accordion-group">
+						<div class="accordion-heading">
+							<a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-1-1">
+								<i></i>Lorem ipsum dolor sit amet?
+							</a>
+					    </div>
+					    <div id="collapse-1-1" class="accordion-body collapse in">
+					      	<div class="accordion-inner">
+					        	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tristique rutrum libero, vel bibendum nunc consectetur sed.
+					      	</div>
+					    </div>
+				  	</div>
+				  	<!-- // Accordion Item END -->
+				  	
+				  	<!-- Accordion Item -->
+				  	<div class="accordion-group">
+					    <div class="accordion-heading">
+					      	<a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-2-1">
+					        	<i></i>Quisque porttitor elit ac mauris?
+					      	</a>
+					    </div>
+					    <div id="collapse-2-1" class="accordion-body collapse">
+					    	<div class="accordion-inner">
+					        	Quisque porttitor elit ac mauris aliquam sollicitudin. Nam imperdiet ligula et dolor pulvinar consequat. Sed in turpis id erat vehicula gravida.
+					      	</div>
+					    </div>
+				  	</div>
+				  	<!-- // Accordion Item END -->
+				  	
+				  	<!-- Accordion Item -->
+				  	<div class="accordion-group">
+					    <div class="accordion-heading">
+					      	<a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-3-1">
+					        	<i></i>Vivamus eros tortor consequat sed?
+					      	</a>
+					    </div>
+					    <div id="collapse-3-1" class="accordion-body collapse">
+					    	<div class="accordion-inner">
+					        	Vivamus eros tortor, consequat sed posuere non, tempus non ligula. Integer pharetra sem eu dolor rhoncus euismod.
+					      	</div>
+					    </div>
+				  	</div>
+				  	<!-- // Accordion Item END -->
+				  	
+				  	<!-- Accordion Item -->
+				  	<div class="accordion-group">
+					    <div class="accordion-heading">
+					      	<a class="accordion-toggle glyphicons right_arrow" data-toggle="collapse" data-parent="#tabAccountAccordion" href="#collapse-4-1">
+					        	<i></i>Etiam suscipit leo tincidunt mi volutpat?
+					      	</a>
+					    </div>
+					    <div id="collapse-4-1" class="accordion-body collapse">
+					    	<div class="accordion-inner">
+					        	Etiam suscipit leo tincidunt mi volutpat commodo. Morbi tempor interdum dictum. In hac habitasse platea dictumst.
+					      	</div>
+					    </div>
+				  	</div>
+				  	<!-- // Accordion Item END -->
+				  	
+				</div>
+			</div>
+			<!-- // Accordion #2 Style END -->
+			
+			<!-- List Widget -->
+			<div class="relativeWrap" data-toggle="source-code" data-placement="outside">
+				<div class="widget">
+					<div class="widget-head">
+						<h4 class="heading glyphicons history"><i></i>List Widget</h4>
+						<a href="" class="details pull-right">link</a>
+					</div>
+					<div class="widget-body list">
+						<ul>
+							<li>
+								<span>List item #1</span>
+								<span class="count">&euro;5,900</span>
+							</li>
+							<li>
+								<span>List item #2</span>
+								<span class="count">36,900</span>
+							</li>
+							<li>
+								<span>List item #3</span>
+								<span class="count">55,200</span>
+							</li>
+							<li>
+								<span>List item #4</span>
+								<span class="count">26,300</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- // List Widget END -->
+			
+		</div>
+	</div>
+	<div class="separator bottom"></div>
+	
+	<p class="separator text-center"><i class="icon-picture icon-3x"></i></p>
+	
+	<!-- Media Widgets -->
+	<h3 class="separator bottom">Media Widgets</h3>
+	
+	<!-- Row -->
+	<div class="row">
+	
+		<!-- Column -->
+		<div class="col-md-6">
+	
+			<div class="box-generic box-generic-gray" data-toggle="source-code">
+			
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-left thumb" data-src="holder.js/50x50/dark" alt="Image" />
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+					</div>
+				</div>
+				<!-- // Media item END -->
+				
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-left thumb" data-src="holder.js/50x50/dark" alt="Image" />
+					<div class="media-body">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+						
+						<!-- Media item -->
+						<div class="media">
+							<img class="media-object pull-left thumb" data-src="holder.js/50x50/dark" alt="Image" />
+							<div class="media-body">
+								<h4 class="media-heading">Nested media widget</h4>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo.
+							</div>
+						</div>
+						<!-- // Media item END -->
+						
+					</div>
+				</div>
+				<!-- // Media item END -->
+		
+			</div>
+		</div>
+		<!-- // Column END -->
+		
+		<!-- Column -->
+		<div class="col-md-6">
+	
+			<div class="box-generic box-generic-gray" data-toggle="source-code">
+		
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-right thumb" data-src="holder.js/50x50/dark" alt="Image" />
+					<div class="media-body right">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+					</div>
+				</div>
+				<!-- // Media item END -->
+				
+				<!-- Media item -->
+				<div class="media">
+					<img class="media-object pull-right thumb" data-src="holder.js/50x50/dark" alt="Image" />
+					<div class="media-body right">
+						<h4 class="media-heading">Media heading</h4>
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo. Suspendisse potenti. Nunc semper cursus dui luctus porttitor. Donec facilisis semper magna sit amet ullamcorper.
+						
+						<!-- Media item -->
+						<div class="media">
+							<img class="media-object pull-right thumb" data-src="holder.js/50x50/dark" alt="Image" />
+							<div class="media-body right">
+								<h4 class="media-heading">Nested media widget</h4>
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vitae accumsan mauris. Donec vitae nibh felis, facilisis bibendum sapien. Duis a odio id erat scelerisque fermentum in ut leo.
+							</div>
+						</div>
+						<!-- // Media item END -->
+						
+					</div>
+				</div>
+				<!-- // Media item END -->
+		
+			</div>
+		</div>
+		<!-- // Column END -->
+		
+	</div>
+	<!-- // Row END -->
+	<!-- // Media Widgets END -->
+	<div class="separator"></div>
+	
+	<p class="separator text-center"><i class="icon-ellipsis-horizontal icon-3x"></i></p>
+	
+	<!-- Nice scroll -->
+	<h3 class="separator bottom">Nice scrollable Widgets</h3>
+	
+	<!-- Row -->
+	<div class="row">
+	
+		<!-- Column -->
+		<div class="col-md-6">
+			<div class="box-generic">
+			
+				<!-- Slim Scroll -->
+				<div class="slim-scroll" data-scroll-height="255px">
+				
+					<h4>Large content scrollable box</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.</p>
+					<p>Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.</p>
+					<p>Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.</p>
+					<p>Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.</p>
+					<p>Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+		
+				</div>
+				<!-- // Slim Scroll END -->
+				
+			</div>
+			<div class="separator bottom"></div>
+		
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="box-generic"&gt;
+	&lt;div class="slim-scroll" data-scroll-height="250px"&gt;
+		&lt;h4&gt;Large content scrollable box&lt;/h4&gt;
+		&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.&lt;/p&gt;
+		&lt;p&gt;Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.&lt;/p&gt;
+		&lt;p&gt;Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.&lt;/p&gt;
+		&lt;p&gt;Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.&lt;/p&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+		<!-- Column -->
+		<div class="col-md-6">
+		
+			<!-- Widget Scroll -->
+			<div class="widget widget-scroll" data-scroll-height="219px">
+				<div class="widget-head">
+					<h4 class="heading">Large content scrollable box</h4>
+				</div>
+				<div class="widget-body">
+					<div>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent tristique porttitor elit, faucibus convallis enim fringilla eu. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed nibh nunc, egestas sit amet convallis ac, molestie vitae dui. Pellentesque placerat fermentum mauris, eu tempus dui egestas eget. Mauris sodales, lectus quis accumsan adipiscing, ante libero porta risus, eu posuere sapien magna a metus. Phasellus laoreet fermentum risus, sed congue nisl facilisis nec. Curabitur ullamcorper ultricies erat, non posuere ipsum adipiscing tincidunt. Vivamus molestie hendrerit odio at rutrum. Suspendisse porta ligula ac eros hendrerit bibendum. Integer quis metus est, eu accumsan enim.</p>
+						<p>Nam commodo imperdiet condimentum. Maecenas in orci odio, quis sagittis augue. Aenean eu nisl turpis. Etiam gravida risus vitae nunc porttitor vestibulum. Praesent ut lorem erat, accumsan ornare erat. Nam in magna magna, nec posuere mi. Curabitur semper mi sed dui ornare vel posuere magna imperdiet. Quisque id tellus ipsum. Maecenas accumsan velit id velit pulvinar tincidunt. Nullam in ante dui. Suspendisse ut orci lectus. Nulla in nunc nec enim interdum auctor. Etiam imperdiet volutpat porta. In bibendum, tortor suscipit facilisis eleifend, lectus lacus laoreet enim, non aliquam nisi justo sit amet leo.</p>
+						<p>Nunc sed dapibus diam. Suspendisse aliquam ultricies sem et semper. Nulla varius, purus ac sodales fermentum, velit sem scelerisque tellus, et hendrerit neque justo bibendum mauris. Etiam vel neque vel dolor aliquam dignissim non sit amet mauris. Ut purus ante, accumsan in venenatis eget, auctor sit amet quam. Morbi nibh quam, lacinia id porta et, pretium id arcu. Mauris justo justo, tincidunt a rhoncus sit amet, mattis id enim. Vivamus vehicula, mi ac dapibus aliquet, sapien metus dignissim odio, vel ornare elit nulla non quam. Suspendisse id ligula odio. Maecenas nunc massa, pharetra sit amet condimentum id, tempus suscipit nisl. Nulla facilisi.</p>
+						<p>Maecenas blandit libero a enim faucibus porta. Proin id mauris non lorem tristique dignissim. Duis hendrerit commodo lorem, ac pellentesque dolor sodales sed. Vivamus accumsan erat sed sem mollis facilisis. Praesent vel magna felis, quis convallis augue. Donec dictum, dolor in fermentum venenatis, est nunc fermentum nulla, at suscipit magna dolor a metus. Pellentesque malesuada pellentesque tellus, tristique eleifend dolor tempor vitae. Phasellus sed sem non massa varius mollis. Curabitur non suscipit nunc. Sed vel metus sapien, in pharetra nisi. In vel nibh et odio congue tristique. Praesent non eros purus. Aenean eleifend lacus iaculis tellus eleifend sodales. Cras auctor tellus ac dui vehicula pretium. Proin non ipsum a elit molestie sodales eu in nisi. In ac nulla tortor, sollicitudin imperdiet nisl.</p>
+						<p>Nunc vitae diam eget arcu rutrum euismod. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce semper libero et dui faucibus egestas. Mauris consequat, lectus at imperdiet faucibus, ante augue egestas neque, ac luctus velit odio id ipsum. Curabitur sed sem at mi elementum aliquam venenatis a risus. Aliquam et arcu sem. Phasellus vestibulum enim ac lacus commodo lacinia. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+					</div>
+				</div>
+			</div>
+			<!-- // Widget Scroll END -->
+			
+<!-- Code sample -->
+<div class="code show">
+<pre class="prettyprint">
+&lt;div class="widget widget-scroll" data-scroll-height="250px"&gt;
+	&lt;div class="widget-head"&gt;
+		&lt;h4 class="heading"&gt;Large content scrollable box&lt;/h4&gt;
+	&lt;/div&gt;
+	&lt;div class="widget-body"&gt;
+		&lt;div&gt;
+			&lt;p&gt;Lorem ipsum dolor sit amet ...&lt;/p&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+</div>
+<!-- Code sample END -->
+	
+		</div>
+		<!-- // Column END -->
+		
+	</div>
+	<!-- // Row END -->
+	<!-- // Media Widgets END -->
+	
+	<p class="separator text-center"><i class="icon-ellipsis-horizontal icon-3x"></i></p>
+	
+	<!-- Other Widgets -->
+	<h3>Other</h3>
+	<div class="box-generic">
+	
+	<!-- Simple heading with arrow preview & code sample -->
+	<h4 class="heading-arrow">Simple heading with arrow</h4>
+	<div class="separator bottom"></div>
+<div class="code show">
+<pre class="prettyprint lang-html">
+&lt;h4 class="heading-arrow"&gt;Simple heading with arrow&lt;/h4&gt;
+</pre>
+<div class="separator bottom"></div>
+</div>
+	<!-- // Simple heading with arrow preview & code sample END -->
+
+	<!-- Links widget preview & code sample -->
+	<div class="menubar links primary">
+		<ul>
+			<li>Link widget:</li>
+			<li><a href="">Button 1</a></li>
+			<li class="divider"></li>
+			<li><a href="">Button 2</a></li>
+			<li class="divider"></li>
+			<li><a href="">Button 3</a></li>
+		</ul>
+	</div>
+	<div class="separator bottom"></div>
+			
+<div class="code show">
+<pre class="prettyprint lang-html">
+&lt;div class="menubar links primary"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Link widget:&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 3&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+<div class="separator bottom"></div>
+</div>
+	<!-- // Links widget preview & code sample END -->
+
+	<!-- Button widget preview & code sample -->
+	<div class="menubar">
+		<ul>
+			<li>Button widget:</li>
+			<li><a href="">Button 1</a></li>
+			<li class="divider"></li>
+			<li><a href="">Button 2</a></li>
+			<li class="divider"></li>
+			<li><a href="">Export</a></li>
+		</ul>
+	</div>
+			
+<div class="code show">
+<div class="separator bottom"></div>
+<pre class="prettyprint lang-html">
+&lt;div class="menubar"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;Button widget:&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 1&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Button 2&lt;/a&gt;&lt;/li&gt;
+		&lt;li class="divider"&gt;&lt;/li&gt;
+		&lt;li&gt;&lt;a href=""&gt;Export&lt;/a&gt;&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+</div>
+	<!-- // Button widget preview & code sample END -->
+
+	</div>
+	<div class="separator bottom"></div>
+	<!-- // Other Widgets END -->
+
+</div>	
+	
+		
+		</div>
+		<!-- // Content END -->
+		
+				</div>
+		<div class="clearfix"></div>
+		<!-- // Sidebar menu & content wrapper END -->
+				
+		<div id="footer" class="hidden-print">
+			
+			<!--  Copyright Line -->
+			<div class="copy">&copy; 2012 - 2013 - <a href="http://www.mosaicpro.biz">MosaicPro</a> - All Rights Reserved. <a href="http://themeforest.net/?ref=mosaicpro" target="_blank">Purchase FLAT KIT on ThemeForest</a> - Current version: v2.0.0 / <a target="_blank" href="http://demo.mosaicpro.biz/flatkit/CHANGELOG">changelog</a></div>
+			<!--  End Copyright Line -->
+	
+		</div>
+		<!-- // Footer END -->
+		
+	</div>
+	<!-- // Main Container Fluid END -->
+	
+<!-- Themer -->
+<div id="themer" class="collapse">
+	<div class="wrapper">
+		<span class="close2">&times; close</span>
+		<h4>Themer <span>color options</span></h4>
+		<ul>
+			<li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
+			<li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
+			<li>
+				<span class="link" id="themer-custom-reset">reset theme</span>
+				<span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
+			</li>
+		</ul>
+		<div id="themer-getcode" class="hide">
+			<hr class="separator" />
+			<button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
+			<button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+</div>
+<!-- // Themer END -->
+
+	
+	<!-- jQuery Event Move -->
+	<script src="../../../../../common/theme/scripts/plugins/system/jquery.event.move/js/jquery.event.move.js"></script>
+	
+	<!-- jQuery Event Swipe -->
+	<script src="../../../../../common/theme/scripts/plugins/system/jquery.event.swipe/js/jquery.event.swipe.js"></script>
+	
+	
+	<!-- Code Beautify -->
+	<script src="../../../../../common/theme/scripts/plugins/other/js-beautify/beautify.js"></script>
+	<script src="../../../../../common/theme/scripts/plugins/other/js-beautify/beautify-html.js"></script>
+	
+	<!-- PrettyPhoto -->
+	<script src="../../../../../common/theme/scripts/plugins/gallery/prettyphoto/js/jquery.prettyPhoto.js"></script>
+	
+	<!-- JQueryUI -->
+	<script src="../../../../../common/theme/scripts/plugins/system/jquery-ui/js/jquery-ui-1.9.2.custom.min.js"></script>
+	
+	<!-- JQueryUI Touch Punch -->
+	<!-- small hack that enables the use of touch events on sites using the jQuery UI user interface library -->
+	<script src="../../../../../common/theme/scripts/plugins/system/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	
+	<!-- Modernizr -->
+	<script src="../../../../../common/theme/scripts/plugins/system/modernizr.js"></script>
+	
+	<!-- Bootstrap -->
+	<script src="../../../../../common/bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- SlimScroll Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/other/jquery-slimScroll/old/jquery.slimscroll.js"></script>
+	
+	<!-- Holder Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/other/holder/holder.js?1382019482"></script>
+	
+	<!-- Uniform Forms Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/forms/pixelmatrix-uniform/jquery.uniform.min.js"></script>
+	
+	<!-- MegaMenu -->
+	<script src="../../../../../common/theme/scripts/demo/megamenu.js?1382019482"></script>
+
+	<!-- Bootstrap Extended -->
+	<script src="../../../../../common/bootstrap/extend/bootstrap-select/bootstrap-select.js"></script>
+	<script src="../../../../../common/bootstrap/extend/bootstrap-switch/static/js/bootstrap-switch.js"></script>
+	<script src="../../../../../common/bootstrap/extend/jasny-fileupload/js/bootstrap-fileupload.js"></script>
+	<script src="../../../../../common/bootstrap/extend/bootbox.js"></script>
+	<script src="../../../../../common/bootstrap/extend/bootstrap-wysihtml5/js/wysihtml5-0.3.0_rc2.min.js"></script>
+	<script src="../../../../../common/bootstrap/extend/bootstrap-wysihtml5/js/bootstrap-wysihtml5-0.0.2.js"></script>
+	
+	<!-- Google Code Prettify -->
+	<script src="../../../../../common/theme/scripts/plugins/other/google-code-prettify/prettify.js"></script>
+	
+	<!-- Gritter Notifications Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js"></script>
+	
+	<!-- Notyfy Notifications Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js"></script>
+	
+	<!-- MiniColors Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/color/jquery-miniColors/jquery.miniColors.js"></script>
+	
+	<!-- DateTimePicker Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/forms/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+
+	<!-- Cookie Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/system/jquery.cookie.js"></script>
+	
+	<!-- Select2 Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/forms/select2/select2.js"></script>
+	
+	<!-- Themer -->
+	<script src="../../../../../common/theme/scripts/demo/themer.js"></script>
+	
+	<!-- Twitter Feed -->
+	<script src="../../../../../common/theme/scripts/demo/twitter.js"></script>
+	
+	<!-- Easy-pie Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.js"></script>
+	
+	<!-- Sparkline Charts Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/charts/sparkline/jquery.sparkline.min.js"></script>
+	
+	<!-- Ba-Resize Plugin -->
+	<script src="../../../../../common/theme/scripts/plugins/other/jquery.ba-resize.js"></script>
+	
+	<!-- Widgets Page Demo Script -->
+	<script src="../../../../../common/theme/scripts/demo/widgets.js?1382019482"></script>
+
+	
+	
+	<!-- Common Demo Script -->
+	<script src="../../../../../common/theme/scripts/demo/common.js?1382019482"></script>
+	
+</body>
+</html>

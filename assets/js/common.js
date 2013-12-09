@@ -1,42 +1,14 @@
 function InitCommon(){
 		
-	$.ui.dialog.prototype.options.resizable = false;
-	$.ui.dialog.prototype.options.modal = true;
-	$.ui.dialog.prototype.options.autoOpen = false;
-	$.ui.dialog.prototype.options.closeOnEscape = false;
-		
+
 	
 	$.ajaxSetup({
 		type:	"post",
 		cache:	false,
-		dataType: "json",
-		beforeSend: AjaxLoadingShow,
+		dataType: "json",		
 		error:	displayAjaxError
 	});
-	
-	$(document).ajaxStop(AjaxLoadingHide);
-	
-	var HTMLdivLoading = '<div id="ajaxLoading" title="Procesando..."><img src="' + Base_URL + 'resources/images/AjaxLoading.gif"  /></div>';
-	
-	$("body").append(HTMLdivLoading);
-
-	$("#ajaxLoading").dialog({
-		minHeight:72,
-		maxHeight:72,
-		height:72,
-		width:248
-	});
-	
-	$('#ajaxLoading').prev('.ui-dialog-titlebar').find('.ui-dialog-titlebar-close').css({display:'none'});
-	
-	$(".dateISO").datepicker({
-		showOn: 'button',
-		dateFormat: 'yy-mm-dd',
-		changeMonth: true,
-		changeYear: true,
-		yearRange: '1950:2020'
-    });
-	
+		
 	try {	
 	
 		$(".numerico").numeric();
@@ -58,8 +30,7 @@ function InitCommon(){
 }
 
 function displayAjaxError(request, errorType, errorThrown) {
-
-	AjaxLoadingHide();
+	
 
 	try {
 		
@@ -85,20 +56,13 @@ function displayAjaxError(request, errorType, errorThrown) {
 	}
 }
 
-function AjaxLoadingShow(){
-	$("#ajaxLoading").dialog('open');
-}
 
-function AjaxLoadingHide(){
-	$("#ajaxLoading").dialog('close');
-}
 
 function fnGoTo(URL){
 	window.location = Front_URL + URL;
 }
 
-function Form2Array(strForm){
-	
+function Form2Array(strForm){	
 	var arrData = new Array();
 	
 	$("input[type=text], input[type=hidden], input[type=password], input[type=checkbox]:checked, input[type=radio]:checked, select, textarea", $('#'+strForm)).each(function() {

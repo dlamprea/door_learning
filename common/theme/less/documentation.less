@@ -1,0 +1,61 @@
+//
+// Documentation
+// --------------------------------------------------
+
+// Icons
+// ------------------------- //
+
+#docs_icons {
+	text-align: center;
+	padding: 0 20px;
+	.glyphicons, .glyphicons-social {
+		display: inline-block;
+		*display: inline;
+		*zoom: 1;
+		width: 125px;
+		font-size: 12px;
+		line-height: 48px;
+		overflow: hidden;
+		color: @bodyText;
+	}
+	.glyphicons i:before, .glyphicons-social i:before {
+		line-height: 55px !important;
+		color: @primaryColor;
+	}
+}
+
+// Documentation
+// ------------------------- //
+
+.documentation {
+	ul {
+		list-style: none;
+		ul { margin-bottom: 10px;  }
+	}
+	.col-md-3 .menu.affix { position: fixed; top: 20px; width: 220px; }
+	
+	.show-grid {
+		margin-top: 15px;
+		margin-bottom: 25px;
+		margin-right: 0;
+		margin-left: 0;
+
+		[class*="col-md-"] {
+			padding: 0;
+			background-color: lighten(#232628, 20%);
+			text-align: center;
+			.rounded(5px,5px,5px,5px);
+			min-height: 40px;
+			line-height: 40px;
+			color: #fff;
+		}
+		.show-grid {
+			margin-top: 0;
+			margin-bottom: 0;
+			[class*="col-md-"] {
+				padding: 0;
+				background-color: lighten(#232628, 40%);
+			}
+		}	
+	}
+}

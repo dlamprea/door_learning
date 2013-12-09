@@ -15,9 +15,9 @@ class Auth {
 			throw new Exception("Sesion no valida o caducada, por favor identifiquese");
 		}
 
-		$arrRoles = $arrAuth['arrRoles'];
-
 		$bolAcceso = FALSE;
+		$arrRoles = $arrAuth['arrRoles'];		
+
 
 		foreach ( $arrRoles as $Row ){
 			if ( in_array($Row,$arrPerfiles) ) {
@@ -34,11 +34,10 @@ class Auth {
 	function loginRoutine($strUserName, $strPassword)
 	{
 		
-		$this->CI->session->sess_destroy();
+		$this->CI->session->sess_destroy();				
 		
 		$strAuthMode = $this->CI->config->item('auth_mode');
 		$bolDevMode = $this->CI->config->item('dev_mode');
-		
 		
 		switch ($strAuthMode) {
 			
@@ -66,7 +65,7 @@ class Auth {
 		
 		$objDB = $this->CI->load->database('default',TRUE);
 		
-		$strSQL = "SELECT * FROM tbl_usuarios WHERE usua_usuario = ?";
+		$strSQL = "SELECT * FROM users WHERE email = ?";
 		$arrBinds = array($strUserName);
 		
 		$objQuery = $objDB->query($strSQL, $arrBinds);
@@ -81,12 +80,12 @@ class Auth {
 			throw new Exception ("El usuario no se encuentra registrado en el aplicativo");
 		}
 	
-		if ( $objUsuario->usua_activo != "S" ) {
+		if ( $objUsuario->status_id != "1" ) {
 			throw new Exception ("El usuario no se encuentra activo");
 		}
 
-		$strSQL = "SELECT usrl_rol FROM tbl_usuariosroles WHERE usrl_usua_id = ?";
-		$arrBinds = array($objUsuario->usua_id);
+		$strSQL = "SELECT rol_id FROM roles_users WHERE user_id = ?";
+		$arrBinds = array($objUsuario->user_id);
 		
 		$objQuery = $objDB->query($strSQL, $arrBinds);
 
@@ -100,23 +99,30 @@ class Auth {
 			throw new Exception ("El usuario no se encuentra asociado a ningun Rol");
 		}
 		
+		
 		$arrRoles = array();
 
 		foreach ( $arrRolesDB as $Row ) {
-			$arrRoles[] = $Row->usrl_rol;
+			$arrRoles[] = $Row->rol_id;
 		}
-	
+
 		$arrAuth['Auth']['objUsuario'] = $objUsuario;
 		$arrAuth['Auth']['arrRoles'] = $arrRoles;
 		$arrAuth['Auth']['logged_in'] = TRUE;
 		
 		$this->CI->session->set_userdata($arrAuth);
-		
-		# Cambiar el estado del usuario a Conectado
-				
+		var_dump($this->CI->session->userdata);
+		die;
 
-				
+		# Registrar el log de Conexion				
 		
+		$objDataLog->user_id = $objUsuario->user_id;
+		$objDataLog->message = 'logeo';
+		$objDataLog->date_creation = $this->CI->tools->getFechaHora();
+		//$objDataLog->uslg_ip = getIPCliente();
+		$this->CI->load->model("usuarios_mdl");
+		
+		$bolAction = $this->CI->usuarios_mdl->addLog($objDataLog);
 	
 	}
 	
