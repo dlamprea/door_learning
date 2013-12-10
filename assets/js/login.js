@@ -21,7 +21,6 @@ function Init() {
 }
 
 function doLogin(){
-
 	var UsrName = $("#username").val();
 	var PssWrd = $("#password").val();
 
@@ -39,10 +38,9 @@ function doLogin(){
 		
 			if ( objResp==null ){ return; }
 		
-			if ( objResp.Res == "OK" ){
+			if ( objResp.Res == "OK" ){				
 				window.location.reload();
 			}
-			
 			if ( objResp.Res == "ERR" ) {
 				alert(objResp.Msg,"Error");
 			}

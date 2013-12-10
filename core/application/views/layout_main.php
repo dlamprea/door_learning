@@ -83,10 +83,11 @@
 	<link href="<?php echo site_url('common/bootstrap/extend/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css')?>" rel="stylesheet" />
 	
 	<!-- Main Theme Stylesheet :: CSS -->
-	<link href="<?php echo site_url('common/theme/css/style-default-menus-dark.css?1382019475" rel="stylesheet')?>" type="text/css" />
+	<link href="<?php echo site_url('common/theme/css/style-default-menus-dark.css?1382019475')?>" rel="stylesheet" type="text/css" />
 	
 	
-	<!-- FireBug Lite -->
+	<!-- Css definidos para el app -->
+	<link href="<?php echo site_url('assets/styles/style.css')?>" rel="stylesheet" type="text/css" />
 	<!-- <script src="https://getfirebug.com/firebug-lite-debug.js"></script> -->
 
 	<!-- LESS.js Library -->
@@ -526,7 +527,7 @@
 						</li>
 						<li>
 							<span>
-								<a class="btn btn-default btn-mini pull-right" href="login.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-dark&amp;top-sticky=false&amp;sidebar-sticky=false&amp;sidebar_type=collapsible">Sign Out</a>
+								<a class="btn btn-default btn-mini pull-right" href="<?php echo site_url('index.php/login/logout')?>">Sign Out</a>
 							</span>
 						</li>
 					</ul>

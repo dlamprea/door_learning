@@ -63,3 +63,9 @@ a{text-decoration: none;}
     box-sizing: border-box;
     -mopz-box-sizing: border-box;
 }
+
+
+.img_usuario_ul{
+    width: 51px;
+    height:51px;
+}

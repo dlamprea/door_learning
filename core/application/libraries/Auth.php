@@ -9,15 +9,14 @@ class Auth {
 	function isLoggedIn($arrPerfiles)
 	{
 		
-		$arrAuth = $this->CI->session->userdata('Auth');
-		
+		$arrAuth = $this->CI->session->userdata('Auth');		
 		if( $arrAuth['logged_in'] != TRUE ){
 			throw new Exception("Sesion no valida o caducada, por favor identifiquese");
 		}
 
 		$bolAcceso = FALSE;
 		$arrRoles = $arrAuth['arrRoles'];		
-
+		
 
 		foreach ( $arrRoles as $Row ){
 			if ( in_array($Row,$arrPerfiles) ) {
@@ -33,9 +32,7 @@ class Auth {
 	
 	function loginRoutine($strUserName, $strPassword)
 	{
-		
-		$this->CI->session->sess_destroy();				
-		
+			
 		$strAuthMode = $this->CI->config->item('auth_mode');
 		$bolDevMode = $this->CI->config->item('dev_mode');
 		
@@ -111,9 +108,7 @@ class Auth {
 		$arrAuth['Auth']['logged_in'] = TRUE;
 		
 		$this->CI->session->set_userdata($arrAuth);
-		var_dump($this->CI->session->userdata);
-		die;
-
+		
 		# Registrar el log de Conexion				
 		
 		$objDataLog->user_id = $objUsuario->user_id;
@@ -131,26 +126,14 @@ class Auth {
 	
 		$usua_id = $this->getUserID();
 
+		$objDataLog->user_id = $usua_id;
+		$objDataLog->message = 'deslogeo';
+		$objDataLog->date_creation = $this->CI->tools->getFechaHora();
+		//$objDataLog->uslg_ip = getIPCliente();
+		$this->CI->load->model("usuarios_mdl");
+		
+		$bolAction = $this->CI->usuarios_mdl->addLog($objDataLog);
 		# Cambiar el estado del usuario a Desconectado
-		
-		$this->CI->load->model('usuarios_mdl');
-		
-		$objData->usua_estado = "D";
-		
-		$this->CI->usuarios_mdl->updRegistro($usua_id,$objData);
-		
-		
-		# Registrar el log de Desconexion
-		
-		$this->CI->load->plugin('tools');
-		
-		$objDataLog->uslg_usua_id = $usua_id;
-		$objDataLog->uslg_usuario = $this->getUserData('usua_usuario');
-		$objDataLog->uslg_fechahora = getFechaHora();
-		$objDataLog->uslg_ip = getIPCliente();
-		$objDataLog->uslg_accion = "Desconexion";
-		
-		$this->CI->usuarios_mdl->addLog($objDataLog);
 		
 		$this->CI->session->sess_destroy();
 		
@@ -159,7 +142,7 @@ class Auth {
 	function getUserID()
 	{
 		$arrAuth = $this->CI->session->userdata('Auth');
-		return $arrAuth['objUsuario']->usua_id; 
+		return $arrAuth['objUsuario']->user_id; 
 	}
 	
 	function getUserData($strIndex)

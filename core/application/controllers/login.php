@@ -40,7 +40,7 @@ class Login extends CI_Controller {
 			return;
 		}
 		
-		redirect("main");
+		redirect("/");
 		
 	}
 	

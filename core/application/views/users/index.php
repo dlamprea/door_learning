@@ -37,129 +37,23 @@
 							</select>
 						</form>
 					</div>
-					<span class="results">1490 Employees Found <i class="icon-circle-arrow-down"></i></span>
+					<span class="results"><?php echo $numero ?> Usuarios <i class="icon-circle-arrow-down"></i></span>
 					<ul class="list unstyled">
-												<li class="active">
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg" alt="Image')?>" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-												<li>
-							<div class="media innerAll">
-								<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
-								<div class="media-body">
-									<span class="strong">Adrian Demian</span>
-									<span class="muted">contact@mosaicpro.biz</span>
-									<i class="icon-envelope"></i>
-									<i class="icon-phone"></i> 
-									<i class="icon-skype"></i> 
-								</div>
-							</div>
-						</li>
-											</ul>
+					 <?php foreach ($usuarios as $usuario) {					 	
+            				echo '<li>';
+            				echo '<div class="media innerAll">';
+            				echo "<div class='media-object pull-left thumb hidden-phone img_usuario_ul'><img src='".site_url('upload/'.$usuario->image)."' alt='Image' /></div>";            				
+            				echo '<div class="media-body">';
+							echo '<span class="strong">'.$usuario->first_name.'</span>';
+							echo '<span class="muted">contact@mosaicpro.biz</span>';
+							echo '<i class="icon-envelope"></i>';
+							echo '<i class="icon-phone"></i>';
+							echo '<i class="icon-skype"></i>';
+							echo '</div>';
+							echo '</div>';
+						    echo '</li>';
+        			}?>	
+        			</ul>
 				</div>
 				<div class="col-md-8 detailsWrapper">
 					<div class="ajax-loading hide">

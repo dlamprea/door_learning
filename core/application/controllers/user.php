@@ -10,7 +10,18 @@ class user extends CI_Controller {
 	
 
 	function index(){
-	
+        $this->load->model("user_mdl");
+
+        try {
+            $usuarios = $this->user_mdl->getAll();
+        } catch (exception $e){
+             ToJSONMsg("ERR", $e->getMessage());
+             return;
+        }
+      
+	    $data->page_title = 'Agregar Nuevo Usuario';
+        $data->numero = $usuarios->NDatos;
+        $data->usuarios = $usuarios->Datos;
  		$this->layout->view('users/index', $data);
 	}
 

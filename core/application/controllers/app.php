@@ -22,7 +22,7 @@ class app extends CI_Controller {
     function index() {
     
     try {
-      $arrPerfiles = array("2","ASESOR","VALIDADOR","BACKOFFICE");      
+      $arrPerfiles = array("2");      
       $this->auth->isLoggedIn($arrPerfiles);
 
     } catch ( Exception $e ){
