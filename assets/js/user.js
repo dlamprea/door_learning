@@ -1,3 +1,4 @@
+datos = [];
 /* ==========================================================
  * FLAT KIT v2.0.0
  * form_validator.js
@@ -100,4 +101,40 @@ $(function()
 			email: "Ingrese una direccion de email valida",			
 		}
 	});
+
+
+	$('.listWrapper li').click(function(){      		
+        user_id= $(this).attr('id');
+
+      $.ajax({
+		url: 'get_user_id',
+		data: {user_id: user_id},
+		type: "POST",
+		dataType: "json",
+		success: function(objResp){					
+			if(objResp==null) { return }
+			
+			if(objResp.Res=="success"){
+				console.log(commonPath);
+				notifacion(objResp.Res,objResp.Msg);
+				$('.first_name').html(objResp.Data.first_name);
+				$('.profile_image').html('<img class="profile_image" src="'+baseurl+'upload/'+objResp.Data.image+'" alt="Profile" />');
+				$('.profile_email').html(objResp.Data.email);
+				$('.profile_phone').html(objResp.Data.phone);
+				$('.profile_mobile_phone').html(objResp.Data.mobile_phone);
+			}
+			
+			if(objResp.Res=="error"){				
+				 notyfy(
+						{
+						text: objResp.Msg,
+						type: objResp.Res // alert|error|success|information|warning|primary|confirm
+				});
+		}
+
+		}
+
+	});
+
+	})
 });

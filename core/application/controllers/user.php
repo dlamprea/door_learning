@@ -30,11 +30,29 @@ class user extends CI_Controller {
  		$this->layout->view('users/form_create', $data);
 	}
 
-	function crear_usuario(){		           
+    function get_user_id()
+    {
+        $this->load->model("user_mdl");
 
-		
-        $this->load->model("user_mdl");        
-      
+
+        $user_id = $_POST['user_id'];
+
+        try {
+            $objDatosUsr = $this->user_mdl->getRow_ById($user_id);
+            $objResp->Res = "success";
+            $objResp->Msg = "El Usuario se ha cargado";
+            $objResp->Data = $objDatosUsr;
+            echo json_encode($objResp);
+        } catch ( Exception $e){
+            $this->tools->ToJSONMsg("error",$e->getMessage());
+            return;
+        }
+
+    }
+
+	function crear_usuario(){		
+        
+        $this->load->model("user_mdl");
         
         $config['allowed_types'] = 'gif|jpg|png';
         $config['image_library'] = 'gd2';            
@@ -60,7 +78,7 @@ class user extends CI_Controller {
         try {
             $this->user_mdl->addRow($arrUsuario);
         } catch (exception $e){
-             ToJSONMsg("ERR", $e->getMessage());
+             $this->tools->ToJSONMsg("ERR", $e->getMessage());
              return;
         }
         $data->page_title = 'Administración de Usuarios';

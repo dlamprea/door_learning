@@ -1,21 +1,21 @@
 
-	<!-- Form -->
-	<form class="form-horizontal margin-none" id="crearUsuario" action="crear_usuario" method="post" enctype="multipart/form-data" >		
-		<!-- Widget -->
-		<div class="widget widget-heading-simple widget-body-gray">
-		
-			<!-- Widget heading -->
-			<div class="widget-head">
-				<h4 class="heading">Ingrese los datos el usuario</h4>
-			</div>
-			<!-- // Widget heading END -->
-			
-			<div class="widget-body">
-			
-				<!-- Row -->
-				<div class="row">
-				
-					<!-- Column -->
+    <!-- Form -->
+    <form class="form-horizontal margin-none" id="crearUsuario" action="crear_usuario" method="post" enctype="multipart/form-data" >        
+        <!-- Widget -->
+        <div class="widget widget-heading-simple widget-body-gray">
+        
+            <!-- Widget heading -->
+            <div class="widget-head">
+                <h4 class="heading">Ingrese los datos el usuario</h4>
+            </div>
+            <!-- // Widget heading END -->
+            
+            <div class="widget-body">
+            
+                <!-- Row -->
+                <div class="row">
+                
+                    <!-- Column -->
                                 <div class="col-md-6">
                                 
                                         <!-- Group -->
@@ -37,18 +37,18 @@
                                                 <label class="col-md-4 control-label" for="cedula">Cedula</label>
                                                 <div class="col-md-8"><input class="form-control" id="idenficacion" name="idenficacion" type="text" /></div>
                                         </div><div class="form-group">
-                                                <label class="col-md-4 control-label" for="birthday">Fecha Nacimiento</label>                                                	
-												<div class="col-md-8"><input type="text" id="birthday" name="birthday" class="form-control col-md-8" placeholder="____-__-__" />
-												<span class="help-inline">Año-Mes-Día</span>
+                                                <label class="col-md-4 control-label" for="birthday">Fecha Nacimiento</label>                                                   
+                                                <div class="col-md-8"><input type="text" id="birthday" name="birthday" class="form-control col-md-8" placeholder="____-__-__" />
+                                                <span class="help-inline">Año-Mes-Día</span>
                                                 </div>
                                         </div>
                                         <div class="form-group">
                                                 <label class="col-md-4 control-label" for="foto">Foto</label>
                                                 <div class="col-md-8 fileupload fileupload-new" data-provides="fileupload">
-												  	<span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span> <br><input type="file"  name="imagen"class="margin-none" /></span>
-												  	<span class="fileupload-preview"></span>
-												  	<a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">&times;</a>
-												</div>
+                                                <span class="btn btn-default btn-file"><span class="fileupload-new">Select file</span><span class="fileupload-exists">Change</span> <br><input type="file"  name="imagen"class="margin-none" /></span>
+                                                <span class="fileupload-preview"></span>
+                                                <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">&times;</a>
+                                            </div>
                                         </div>
                                         <!-- // Group END -->
                                         
@@ -89,24 +89,24 @@
                                         
                                 </div>
                                 <!-- // Column END -->
-				</div>
-				<!-- // Row END -->
-				
-				<hr class="separator" />
-				
-				
-				
-				<!-- Form actions -->
-				<div class="form-actions">
-					<button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok"><i></i>Save</button>
-					<button type="button" class="btn btn-icon btn-default glyphicons circle_remove"><i></i>Cancel</button>
-				</div>
-				<!-- // Form actions END -->
-				
-			</div>
-		</div>
-		<!-- // Widget END -->
-		
-	</form>
-	<script src="<?php echo site_url('common/theme/scripts/plugins/forms/jquery-validation/dist/jquery.validate.min.js')?>"></script>
-	<script src="<?php echo site_url('assets/js/user.js')?>"></script>
+                </div>
+                <!-- // Row END -->
+                
+                <hr class="separator" />
+                
+                
+                
+                <!-- Form actions -->
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-icon btn-primary glyphicons circle_ok"><i></i>Save</button>
+                    <button type="button" class="btn btn-icon btn-default glyphicons circle_remove"><i></i>Cancel</button>
+                </div>
+                <!-- // Form actions END -->
+                
+            </div>
+        </div>
+        <!-- // Widget END -->
+        
+    </form>
+    <script src="<?php echo site_url('common/theme/scripts/plugins/forms/jquery-validation/dist/jquery.validate.min.js')?>"></script>
+    <script src="<?php echo site_url('assets/js/user.js')?>"></script>

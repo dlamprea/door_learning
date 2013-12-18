@@ -98,6 +98,7 @@
 	//<![CDATA[
 	var basePath = '',
 		commonPath = "<?php echo site_url('common/')?>"
+		baseurl = "<?php echo site_url()?>"
 
 	// colors
 	var primaryColor = '#e5412d',
@@ -732,6 +733,8 @@
 	
 	<!-- Common Demo Script -->
 	<script src="<?php echo site_url('common/theme/scripts/demo/common.js?1382019475')?>"></script>
+   <script src="<?php echo site_url('assets/js/common.js')?>"></script>
+
 	<?php
 	if ( !empty($Notificaciones) ){
 		foreach($Notificaciones as $Notificacion){

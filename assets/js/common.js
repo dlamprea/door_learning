@@ -1,33 +1,3 @@
-function InitCommon(){
-		
-
-	
-	$.ajaxSetup({
-		type:	"post",
-		cache:	false,
-		dataType: "json",		
-		error:	displayAjaxError
-	});
-		
-	try {	
-	
-		$(".numerico").numeric();
-		
-	} catch(e){ }
-	
-	try {	// Si no esta cargado el plugin MaskedInput para los text de Fechas y Horas, genera un error.
-		$.mask.definitions['M']='[01]';
-		$.mask.definitions['H']='[012]';
-		$.mask.definitions['D']='[0123]';
-		$.mask.definitions['N']='[012345]';
-		$.mask.definitions['n']='[0123456789]';
-		
-		$(".dateISO").mask("Hnnn-Mn-Dn");
-		$(".timeISO").mask("Hn:Nn");
-		
-	} catch(e){ }
-
-}
 
 function displayAjaxError(request, errorType, errorThrown) {
 	
@@ -56,6 +26,8 @@ function displayAjaxError(request, errorType, errorThrown) {
 	}
 }
 
+			
+				 
 
 
 function fnGoTo(URL){
@@ -75,4 +47,14 @@ function Form2Array(strForm){
 	return arrData;
 	
 }
+
+function notifacion(tipo,mensaje){
+	notyfy(
+			{
+			text: mensaje,
+			type: tipo // alert|error|success|information|warning|primary|confirm
+	});
+}
+
+			
 

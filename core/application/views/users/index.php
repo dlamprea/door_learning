@@ -40,7 +40,7 @@
 					<span class="results"><?php echo $numero ?> Usuarios <i class="icon-circle-arrow-down"></i></span>
 					<ul class="list unstyled">
 					 <?php foreach ($usuarios as $usuario) {					 	
-            				echo '<li>';
+            				echo '<li id="'.$usuario->user_id.'">';
             				echo '<div class="media innerAll">';
             				echo "<div class='media-object pull-left thumb hidden-phone img_usuario_ul'><img src='".site_url('upload/'.$usuario->image)."' alt='Image' /></div>";            				
             				echo '<div class="media-body">';
@@ -63,11 +63,11 @@
 						<div class="title">
 							<div class="row">
 								<div class="col-md-8">
-									<h3 class="text-primary">Adrian Demian</h3>
-									<span class="muted">Senior Designer</span>
+									<h3 class="text-primary first_name"><?php echo $usuarios[0]->first_name ?></h3>
+									<span class="muted">Podria ir el cusro o cargo</span>
 								</div>
 								<div class="col-md-4 text-right">
-									<p class="muted">4 projects <a href=""><i class="icon-circle-arrow-right"></i></a></p>
+									<p class="muted">Num de cursos<a href=""><i class="icon-circle-arrow-right"></i></a></p>
 									<div class="margin-bottom-none progress">
 										<div class="count">30%</div>
 										<div class="progress-bar count-outside" style="width: 30%;"></div>
@@ -80,13 +80,13 @@
 							<div class="row">
 								<div class="col-md-4 overflow-hidden padding-none">
 									<!-- Profile Photo -->
-									<div class="center"><a href="" class="thumb inline-block"><img src="<?php echo site_url('common/theme/images/avatar-2-large.jpg')?>" alt="Profile" /></a></div>
+									<div class="center"><a href="" class="thumb inline-block profile_image"><img src="<?php echo site_url('upload/'.$usuarios[0]->image) ?>" alt="Profile" /></a></div>
 									<div class="separator bottom"></div>
 									<!-- // Profile Photo END -->
 									<ul class="icons-ul">
-										<li><i class="icon-envelope icon-li icon-fixed-width"></i> contac@mosaicpro.biz</li>
-										<li><i class="icon-phone icon-li icon-fixed-width"></i> 00353 9191238101</li>
-										<li><i class="icon-skype icon-li icon-fixed-width"></i> mosaicpro</li>
+										<li><i class="icon-envelope icon-li icon-fixed-width "></i><span class="profile_email"><?php echo $usuarios[0]->email ?></span></li>
+										<li><i class="icon-phone icon-li icon-fixed-width "></i><span class="profile_phone"> <?php echo $usuarios[0]->phone ?></span></li>
+										<li><i class="icon-mobile-phone icon-li icon-fixed-width "></i> <span class="profile_mobile_phone"> <?php echo $usuarios[0]->mobile_phone ?></span></li>
 									</ul>
 								</div>
 								<div class="col-md-8 padding-none">
@@ -148,6 +148,5 @@
 	</div>
 	
 </div>	
-	
-		
-		
+ <script src="<?php echo site_url('common/theme/scripts/plugins/forms/jquery-validation/dist/jquery.validate.min.js')?>"></script>		
+<script src="<?php echo site_url('assets/js/user.js')?>"></script>
