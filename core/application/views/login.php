@@ -5,7 +5,7 @@
 <!--[if gt IE 8]> <html class="animations ie gt-ie8 fluid top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"> <![endif]-->
 <!--[if !IE]><!--><html class="animations fluid top-full menuh-top sidebar sidebar-full sidebar-dropdown sidebar-width-mini sidebar-hat"><!-- <![endif]-->
 <head>
-    <title>FLAT KIT (v2.0.0)</title>
+    <title><?php echo APP_NAME ?></title>
     
     <!-- Meta -->
     <meta charset="UTF-8" />
@@ -81,7 +81,7 @@
     
         <div class="wrapper">
         
-            <h1 class="glyphicons lock">FLAT KIT <i></i></h1>
+            <h1 class="glyphicons lock">LEARNING  <i></i></h1>
         
             <!-- Box -->
             <div class="widget widget-heading-simple widget-body-gray">
@@ -89,7 +89,7 @@
                 <div class="widget-body">
                 
                     <!-- Form -->
-                    <form action="#" id="frmLogin" class="row frmLogin" >
+                    <form id="frmLogin" action="#" class="row" >
                      <fieldset>
                         <label>Username or Email</label>
                             <input type="text" name="username"  class="input-block-level form-control" id="username" placeholder="Your Username or Email address"/> 
@@ -100,58 +100,25 @@
                                 <div class="uniformjs innerL"><label class="checkbox"><input type="checkbox" value="remember-me">Remember me</label></div>
                             </div>
                             <div class="col-md-4 pull-right padding-none" id="div_submit">                             
-                                <button class="btn btn-block btn-inverse" type="submit"  id="btnLogin">Sign in</button>
+                                <a class="btn btn-block btn-inverse"  id="btnLogin">Sign in</a>
                             </div>
                     </fieldset>
                     </form>
          <!-- // Form END -->                            
                 </div>
                 <div class="widget-footer">
-                    <p class="glyphicons restart"><i></i>Please enter your username and password ...</p>
+                    <p class="glyphicons restart errors"><i></i><span>Please enter your username and password ...</span></p>
                 </div>
             </div>
-            <?php echo $Msg  ?>            
-            <!-- // Box END -->
-            
-            <div class="innerT center">
-            
-                <a href="signup.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;top-sticky=false&amp;sidebar-sticky=false&amp;sidebar_type=dropdown" class="btn btn-icon-stacked btn-block btn-success glyphicons user_add"><i></i><span>Don't have an account?</span><span class="strong">Sign up</span></a>
-                
-                <p class="innerT">Alternatively</p>
-                <a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;top-sticky=false&amp;sidebar-sticky=false&amp;sidebar_type=dropdown" class="btn btn-icon-stacked btn-block btn-facebook glyphicons-social facebook"><i></i><span>Join using your</span><span class="strong">Facebook Account</span></a>
-                <p>or</p>
-                <a href="index.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;top-sticky=false&amp;sidebar-sticky=false&amp;sidebar_type=dropdown" class="btn btn-icon-stacked btn-block btn-google glyphicons-social google_plus"><i></i><span>Join using your</span><span class="strong">Google Account</span></a>
-                <p>Having troubles? <a href="faq.html?lang=en&amp;layout_type=fluid&amp;menu_position=menu-left&amp;style=style-default-menus-light&amp;top-sticky=false&amp;sidebar-sticky=false&amp;sidebar_type=dropdown">Get Help</a></p>
-            </div>
+      
+           
             
         </div>
         
     </div>
     
 </div>
-<!-- // Wrapper END --> 
-<!-- Themer -->
-<div id="themer" class="collapse">
-    <div class="wrapper">
-        <span class="close2">&times; close</span>
-        <h4>Themer <span>color options</span></h4>
-        <ul>
-            <li>Theme: <select id="themer-theme" class="pull-right"></select><div class="clearfix"></div></li>
-            <li>Primary Color: <input type="text" data-type="minicolors" data-default="#ffffff" data-slider="hue" data-textfield="false" data-position="left" id="themer-primary-cp" /><div class="clearfix"></div></li>
-            <li>
-                <span class="link" id="themer-custom-reset">reset theme</span>
-                <span class="pull-right"><label>advanced <input type="checkbox" value="1" id="themer-advanced-toggle" /></label></span>
-            </li>
-        </ul>
-        <div id="themer-getcode" class="hide">
-            <hr class="separator" />
-            <button class="btn btn-primary btn-small pull-right btn-icon glyphicons download" id="themer-getcode-less"><i></i>Get LESS</button>
-            <button class="btn btn-inverse btn-small pull-right btn-icon glyphicons download" id="themer-getcode-css"><i></i>Get CSS</button>
-            <div class="clearfix"></div>
-        </div>
-    </div>
-</div>
-<!-- // Themer END -->
+
 
     
     <!-- jQuery Event Move -->

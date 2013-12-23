@@ -25,7 +25,7 @@ function doLogin(){
 	var PssWrd = $("#password").val();
 
 	if ( UsrName=="" || PssWrd=="" ){
-		alert("Debe especificar Usuario y Clave","Error");
+		$('.errors span').html("Debe especificar Usuario y Clave");				
 		return;
 	}
 	
@@ -42,7 +42,7 @@ function doLogin(){
 				window.location.reload();
 			}
 			if ( objResp.Res == "ERR" ) {
-				alert(objResp.Msg,"Error");
+				$('.errors span').html(objResp.Msg);						
 			}
 			
 		}

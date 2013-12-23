@@ -143,7 +143,7 @@
 								<div class="widget widget-heading-simple widget-body-white margin-none">
 									<div class="widget-body">
 										<div class="media">
-											<div class="media-object pull-left thumb"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+											<div class="media-object pull-left thumb"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 											<div class="media-body">
 												<a class="author">Adrian Demian</a><br/>
 												<span class="muted">adrian@ennovation.ie</span>
@@ -172,7 +172,7 @@
 								<div class="widget widget-heading-simple widget-body-white margin-none">
 									<div class="widget-body">
 										<div class="media">
-											<div class="media-object pull-left thumb"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+											<div class="media-object pull-left thumb"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 											<div class="media-body">
 												<a class="author">Adrian Demian</a><br/>
 												<span class="muted">adrian@ennovation.ie</span>
@@ -184,12 +184,12 @@
 											<!-- Gallery Layout -->
 											<div class="gallery gallery-2">
 												<ul class="row" data-toggle="modal-gallery" data-target="#modal-gallery" id="gallery-4" data-delegate="#gallery-4">
-																										<li class="col-md-2 hidden-sm"><a class="thumb" href="../../../../../common/theme/images/gallery-2/6.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/6.jpg" alt="photo" /></a></li>
-																										<li class="col-md-2 hidden-sm"><a class="thumb" href="../../../../../common/theme/images/gallery-2/5.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/5.jpg" alt="photo" /></a></li>
-																										<li class="col-md-2 hidden-sm"><a class="thumb" href="../../../../../common/theme/images/gallery-2/4.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/4.jpg" alt="photo" /></a></li>
-																										<li class="col-md-2"><a class="thumb" href="../../../../../common/theme/images/gallery-2/3.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/3.jpg" alt="photo" /></a></li>
-																										<li class="col-md-2"><a class="thumb" href="../../../../../common/theme/images/gallery-2/2.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/2.jpg" alt="photo" /></a></li>
-																										<li class="col-md-2"><a class="thumb" href="../../../../../common/theme/images/gallery-2/1.jpg" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="../../../../../common/theme/images/gallery-2/1.jpg" alt="photo" /></a></li>
+																										<li class="col-md-2 hidden-sm"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/6.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/6.jpg')?>" alt="photo" /></a></li>
+																										<li class="col-md-2 hidden-sm"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/5.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/5.jpg')?>" alt="photo" /></a></li>
+																										<li class="col-md-2 hidden-sm"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/4.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/4.jpg')?>" alt="photo" /></a></li>
+																										<li class="col-md-2"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/3.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/3.jpg')?>" alt="photo" /></a></li>
+																										<li class="col-md-2"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/2.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/2.jpg')?>" alt="photo" /></a></li>
+																										<li class="col-md-2"><a class="thumb" href="<?php echo site_url('common/theme/images/gallery-2/1.jpg')?>" data-gallery="gallery"><img width="46" height="31" style="width: 46px; height: 31px;" src="<?php echo site_url('common/theme/images/gallery-2/1.jpg')?>" alt="photo" /></a></li>
 																									</ul>
 											</div>
 											<!-- // Gallery Layout END -->
@@ -234,7 +234,7 @@
 							<ul class="list unstyled">
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -246,7 +246,7 @@
 								</li>
 																<li class="active">
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg" alt="Image')?>" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -258,7 +258,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -270,7 +270,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -282,7 +282,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -294,7 +294,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -306,7 +306,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -318,7 +318,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -330,7 +330,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -342,7 +342,7 @@
 								</li>
 																<li>
 									<div class="media innerAll">
-										<div class="media-object pull-left thumb hidden-phone"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+										<div class="media-object pull-left thumb hidden-phone"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 										<div class="media-body">
 											<span class="strong">Adrian Demian</span>
 											<span class="muted">contact@mosaicpro.biz</span>
@@ -379,7 +379,7 @@
 									<div class="row">
 										<div class="col-md-4 overflow-hidden">
 											<!-- Profile Photo -->
-											<div><a href="" class="thumb inline-block"><img src="../../../../../common/theme/images/avatar-2-large.jpg" alt="Profile" /></a></div>
+											<div><a href="" class="thumb inline-block"><img src="<?php echo site_url('common/theme/images/avatar-2-large.jpg')?>" alt="Profile" /></a></div>
 											<div class="separator bottom"></div>
 											<!-- // Profile Photo END -->
 											<ul class="icons-ul separator bottom">
@@ -780,7 +780,7 @@
 										</div>
 									</div>
 									<div class="col-md-7">
-										<img src="../../../../../common/theme/images/gallery-2/8.jpg" alt="" />
+										<img src="<?php echo site_url('common/theme/images/gallery-2/8.jpg')?>" alt="" />
 									</div>
 								</div>
 							</div>
@@ -795,7 +795,7 @@
 										</div>
 									</div>
 									<div class="col-md-7">
-										<img src="../../../../../common/theme/images/gallery-2/9.jpg" alt="" />
+										<img src="<?php echo site_url('common/theme/images/gallery-2/9.jpg')?>" alt="" />
 									</div>
 								</div>
 							</div>
@@ -810,7 +810,7 @@
 										</div>
 									</div>
 									<div class="col-md-7">
-										<img src="../../../../../common/theme/images/gallery-2/10.jpg" alt="" />
+										<img src="<?php echo site_url('common/theme/images/gallery-2/10.jpg')?>" alt="" />
 									</div>
 								</div>
 							</div>
@@ -903,7 +903,7 @@
 					<!-- Media item -->
 					<div class="media">
 						<small class="author"><a href="#" title="" class="strong">Martin</a></small>
-						<div class="media-object pull-left thumb"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+						<div class="media-object pull-left thumb"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 						<div class="media-body">
 							<blockquote>
 								<small class="date"><cite>just now</cite></small>
@@ -916,7 +916,7 @@
 					<!-- Media item -->
 					<div class="media right">
 						<small class="author"><a href="#" title="" class="strong">John Doe</a></small>
-						<div class="media-object pull-right thumb"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+						<div class="media-object pull-right thumb"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 						<div class="media-body">
 							<blockquote class="pull-right">
 								<small class="date"><cite>15 seconds ago</cite></small>
@@ -929,7 +929,7 @@
 					<!-- Media item -->
 					<div class="media">
 						<small class="author"><a href="#" title="" class="strong">Ricky</a></small>
-						<div class="media-object pull-left thumb"><img src="../../../../../common//theme/images/avatar-51x51.jpg" alt="Image" /></div>
+						<div class="media-object pull-left thumb"><img src="<?php echo site_url('common//theme/images/avatar-51x51.jpg')?>" alt="Image" /></div>
 						<div class="media-body">
 							<blockquote>
 								<small class="date"><cite>5 minutes ago</cite></small>
@@ -1051,7 +1051,11 @@
 				</div>
 			</div>
 			<!-- // Latest Orders/List Widget END -->
-			
+			<div class="widget-body center">
+					<span class="gritter-add-white btn btn-default btn-block">Light</span>
+					<span class="gritter-add-regular btn btn-inverse btn-block">Dark</span>
+					<span class="gritter-add-primary btn btn-primary btn-block">Primary</span>
+				</div>
 			<!-- Widget -->
 			<h2 class="margin-none separator bottom"><i class="icon-file-text icon-fixed-width text-primary"></i>Notes</h2>
 			<div class="widget widget-heading-simple widget-body-gray">

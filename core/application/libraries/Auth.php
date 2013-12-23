@@ -32,10 +32,9 @@ class Auth {
 	
 	function loginRoutine($strUserName, $strPassword)
 	{
-			
 		$strAuthMode = $this->CI->config->item('auth_mode');
-		$bolDevMode = $this->CI->config->item('dev_mode');
-		
+		$bolDevMode = $this->CI->config->item('dev_mode');	
+
 		switch ($strAuthMode) {
 			
 			case "LDAP":
@@ -46,9 +45,8 @@ class Auth {
 			
 			break;
 			
-			case "DATABASE":
-			
-				if ( $bolDevMode == FALSE ){
+			case "DATABASE":					
+				if ( $bolDevMode == FALSE ){					
 					$this->autenticar_db($strUserName,$strPassword);
 				}
 			
@@ -166,14 +164,13 @@ class Auth {
 	
 	private function autenticar_db($username, $password)
 	{
+		$objDB = $this->CI->load->database('default',TRUE);
 		
-		$objDB = $this->CI->db;
-		
-		$SQL = "SELECT usua_id FROM tbl_usuarios WHERE usua_usuario=? AND usua_clave=?";
+		$SQL = "SELECT user_id FROM users WHERE email=? AND password=?";
 		
 		$DataSQL = array($username, md5($password) );
 		
-		$Query = $objDB->query($SQL, $DataSQL);
+		$Query = $objDB->query($SQL, $DataSQL);		
 		
 		if( $Query==false ){
 			throw new exception("Error al consultar la Base de Datos. <br/>" .mysql_error() );

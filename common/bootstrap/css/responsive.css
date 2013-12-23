@@ -1,0 +1,210 @@
+/* -----------------------------------------------------------------------------
+	Responsive Feature
+----------------------------------------------------------------------------- */
+
+img { height:auto; }
+
+.slider img, .slider embed, .slider object, .slider video,  #slider img, #content img, #content embed, #content object, #content video, #sidebar img, #content-bottom img, #content-bottom embed, #content-bottom video, #content-top img, #content-top embed, #content-top video  { width:auto; max-width:100% !important; height:auto !important; }
+.slider li .two-third, #content .portfolio-images-inner, #content-bottom .portfolio-images-inner, #content-top .portfolio-images-inner { width:auto; max-width:100%; }
+
+/* -----------------------------------------------------------------------------
+	768px - tablet portrait
+----------------------------------------------------------------------------- */
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+	
+	body { overflow-x:hidden; }
+
+	.wrapper { width:728px; }
+
+	/* Logo */
+	#logo { float:left; text-align:center; }
+
+	/* Navigation */
+	#nav { display:none; }
+	#mobile-navigation-container  { display:block; float:right; padding-top:0; clear: none; }
+
+	/* Columns */
+	.one-half { width:349px; }
+	#sidebar, .one-third { width:222px; }
+	#content, .two-third { width:476px; }
+	.one-fourth { width:159px; }
+	.three-fourth { width:539px; }
+
+	/* Portfolio */
+	.portfolio-listing-fancy .portfolio-post-fancy-title { font-size:14px; line-height:18px; margin-bottom:0; }
+	.portfolio-listing-fancy .portfolio-post-fancy-excerpt { font-size:12px; line-height:16px; }
+
+	/* Sidebar search */
+	#sidebar .widget_search input[type="text"] { width: 184px; }
+
+}
+
+/* -----------------------------------------------------------------------------
+	480px - mobile landscape
+----------------------------------------------------------------------------- */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+	
+	body { overflow-x:hidden; }
+
+	.wrapper { width:440px; }
+
+	/* Logo */
+	#logo { float:none; text-align:center; }
+
+	/* Navigation */
+	#nav { display:none; }
+	#mobile-navigation-container  { display:block; }
+
+	/* Columns */
+	#content, #sidebar, .one-one, .one-half, .one-third, .two-third, .one-fourth, .three-fourth { width:100%; }
+	.one-half, .one-third, .two-third, .one-fourth, .three-fourth { float:none; margin-bottom:30px; margin-right:0; }
+	.one-half.last, .one-third.last, .two-third.last, .one-fourth.last, .three-fourth.last { margin-bottom:30px; }
+	#sidebar { margin-top:40px; }
+
+	/* Slider */
+	.slider-container .three-fourth, .slider-container .one-fourth, .slider-container .two-third, .slider-container .one-third, .slider-container .one-half { width:100% !important; margin-bottom:20px; }
+	.slider ul.slides li.slide .slide-title { margin:0; }
+	.slider ul.slides li.slide .slide-description { display:none; }
+	.slider ul.slides li.slide .slide-info { left:10px; margin-right:10px; }
+	.slider .slider-prev, .slider .slider-next { display:none; }
+
+	/* Carousel */
+	.carousel ul.slides li.slide .slide-info a, .carousel ul.slides li.slide .slide-info h3 { font-size:13px; line-height:16px; }
+	.carousel ul.slides li.slide .slide-info .slide-description { display:none; }
+	.carousel .carousel-actions { display:none; }
+
+	/* Header Top */
+	#header-top-left, #header-top-right { float:none; margin-bottom:0; text-align:center; }
+	#header-top-right { margin-top:30px; float:none; }
+		#header .header-social ul { float:none; }
+			#header .header-social ul li { display:inline-block; float:none; }
+
+
+	/* Blog Posts */
+	ul.blog-post-meta li { line-height:18px; }
+
+	/* Portfolio Posts */
+	#portfolio-single-related { padding:0 100px; }
+	#portfolio-filter ul li a { line-height:18px; }
+
+	/* Tagline */
+	#tagline h1 { font-size:20px; line-height:26px; }
+
+	/* Breadcrumbs */
+	#breadcrumbs ul li span.breadcrumbs-info { display:none; }
+
+	/* Staff Posts */
+	.staff-post-thumbnail { text-align:center; }
+		.staff-post-thumbnail img { display:inline; }
+
+	/* Testimonials */
+	.testimonials-scroller-actions { display:none; }
+
+	/* Sidebar Slider Widget */
+	.jw-slider-posts-widget .slider-posts-post-entry { padding:0 100px; }
+
+	/* Tabs */
+	.tabs-nav { display: none; }
+	.tab-mobile-title { display: block; font-size: 16px; line-height: 24px; font-weight: bold; margin-bottom: 10px; }
+	.tab-content { display: block !important; margin-bottom: 20px; }
+
+	/* Pricing Table */
+	.pricing-table-column { width: 50%; float: left; text-align: center; }
+	.pricing-table-features { display: none; }
+	.pricing-table-mobile { display: block; }
+
+	/* Footer Nav */
+	#footer-navigation { float:none; clear:both; padding-top:20px; }
+		#footer-navigation li { margin:0; margin-right:15px; }
+
+	/* Footer tweet */
+	#footer .recent-tweets { padding:0 60px; }
+		#footer .recent-tweets li { font-size:14px; line-height:18px; }
+
+	.no-margin-bottom { margin-bottom:30px !important; }
+
+}
+
+/* -----------------------------------------------------------------------------
+	320px - mobile portrait
+----------------------------------------------------------------------------- */
+@media only screen and (max-width: 479px) {
+	
+	body { overflow-x:hidden; }
+	
+	.wrapper { width:280px; }
+
+	/* Logo */
+	#logo { float:none; text-align:center; }
+
+	/* Navigation */
+	#nav { display:none; }
+	#mobile-navigation-container  { display:block; }
+
+	/* Columns */
+	#content, #sidebar, .one-one, .one-half, .one-third, .two-third, .one-fourth, .three-fourth { width:100%; }
+	.one-half, .one-third, .two-third, .one-fourth, .three-fourth { float:none; margin-bottom:30px; margin-right:0; }
+	.one-half.last, .one-third.last, .two-third.last, .one-fourth.last, .three-fourth.last { margin-bottom:30px; }
+	#sidebar { margin-top:40px; }
+
+	/* Slider */
+	.slider-container .three-fourth, .slider-container .one-fourth, .slider-container .two-third, .slider-container .one-third, .slider-container .one-half { width:100% !important; margin-bottom:20px; }
+	.slider ul.slides li.slide .slide-title { margin:0; }
+	.slider ul.slides li.slide .slide-description { display:none; }
+	.slider ul.slides li.slide .slide-info { left:10px; margin-right:10px; }
+	.slider .slider-prev, .slider .slider-next { display:none; }
+
+	/* Carousel */
+	.carousel ul.slides li.slide .slide-info a, .carousel ul.slides li.slide .slide-info h3  { font-size:13px; line-height:16px; }
+	.carousel ul.slides li.slide .slide-info .slide-description { display:none; }
+	.carousel .carousel-actions { display:none; }
+
+	/* Header Top */
+	#header-top-left, #header-top-right { float:none; margin-bottom:0; text-align:center; }
+	#header-top-right { margin-top:30px; float:none; }
+		#header .header-social ul { float:none; }
+			#header .header-social ul li { display:inline-block; float:none; }
+
+	/* Breadcrumbs */
+	#breadcrumbs ul li span.breadcrumbs-info { display:none; }
+
+	/* Blog Posts */
+	ul.blog-post-meta li { line-height:18px; }
+
+	/* Portfolio Posts */
+	#portfolio-filter ul li a { line-height:18px; }
+	
+	/* Testimonials */
+	.testimonials-scroller-actions { display:none; }
+
+	/* Tagline */
+	#tagline h1 { font-size:20px; line-height:26px; }
+
+	/* Staff Posts */
+	.staff-post-thumbnail { text-align:center; }
+		.staff-post-thumbnail img { display:inline; }
+
+	/* Tabs */
+	.tabs-nav { display: none; }
+	.tab-mobile-title { display: block; font-size: 16px; line-height: 24px; font-weight: bold; margin-bottom: 10px; }
+	.tab-content { display: block !important; margin-bottom: 20px; }
+
+	/* Sidebar Slider Widget */
+	.jw-slider-posts-widget .slider-posts-post-entry { padding:0 100px; }
+
+	/* Pricing Table */
+	.pricing-table-column { width: 100%; float: none; text-align: center; }
+	.pricing-table-features { display: none; }
+	.pricing-table-mobile { display: block; }
+
+	/* Footer Nav */
+	#footer-navigation { float:none; clear:both; padding-top:20px; }
+		#footer-navigation li { margin:0; margin-right:15px; }
+
+	/* Footer tweet */
+	#footer .recent-tweets { padding:0 60px; }
+		#footer .recent-tweets li { font-size:14px; line-height:18px; }
+
+	.no-margin-bottom { margin-bottom:30px !important; }
+	
+}

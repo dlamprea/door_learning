@@ -16,6 +16,7 @@
 	
 	<!-- Bootstrap -->
 	<link href="<?php echo site_url('common/bootstrap/css/bootstrap.css') ?>" rel="stylesheet" type="text/css" />
+	<link href="<?php echo site_url('common/bootstrap/css/responsive.css') ?>" rel="stylesheet" type="text/css" />
 	
 	
 	<!-- Glyphicons Font Icons -->
@@ -25,7 +26,7 @@
 	
 
 	<link rel="stylesheet" href="<?php echo site_url('common/theme/fonts/font-awesome/css/font-awesome.min.css') ?>">
-	<!--[if IE 7]><link rel="stylesheet" href="<?php echo site_url('common/theme/fonts/font-awesome/css/font-awesome-ie7.min.css') ?>"><![endif]-->
+
 	
 	<!-- Uniform Pretty Checkboxes -->
 	<link href="<?php echo site_url('common/theme/scripts/plugins/forms/pixelmatrix-uniform/css/uniform.default.css') ?>" rel="stylesheet" />
@@ -37,13 +38,9 @@
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-	<!--[if lt IE 9]>
-      <script src="<?php echo site_url('common/theme/scripts/plugins/system/html5shiv.js')?>"></script>
-    <![endif]-->
-	
+    
 	<!--[if IE]><!--><script src="<?php echo site_url('common/theme/scripts/plugins/other/excanvas/excanvas.js')?>"></script><!--<![endif]-->
-	<!--[if lt IE 8]><script src="<?php echo site_url('common/theme/scripts/plugins/other/json2.js')?>"></script><![endif]-->
+	
 	
 	<!-- Bootstrap Extended -->
 	<link href="<?php echo site_url('common/bootstrap/extend/jasny-fileupload/css/fileupload.css')?>" rel="stylesheet">
@@ -76,8 +73,6 @@
 	<!-- Select2 Plugin -->
 	<link href="<?php echo site_url('common/theme/scripts/plugins/forms/select2/select2.css')?>" rel="stylesheet" />
 
-	<!-- Pageguide Guided Tour Plugin -->
-	<!--[if gt IE 8]><!--><link media="screen" href="<?php echo site_url('common/theme/scripts/plugins/other/pageguide/css/pageguide.css')?>" rel="stylesheet" /><!--<![endif]-->
 
 	<!-- Bootstrap Image Gallery -->
 	<link href="<?php echo site_url('common/bootstrap/extend/bootstrap-image-gallery/css/bootstrap-image-gallery.min.css')?>" rel="stylesheet" />
@@ -94,11 +89,13 @@
 	<script src="<?php echo site_url('common/theme/scripts/plugins/system/less.min.js')?>"></script>
 	
 	<!-- Global -->
+	
 	<script>
 	//<![CDATA[
 	var basePath = '',
-		commonPath = "<?php echo site_url('common/')?>"
+		commonPath = '../../../../../common/';
 		baseurl = "<?php echo site_url()?>"
+	
 
 	// colors
 	var primaryColor = '#e5412d',
@@ -680,7 +677,7 @@
 	<script src="<?php echo site_url('common/theme/scripts/plugins/other/google-code-prettify/prettify.js')?>"></script>
 	
 	<!-- Gritter Notifications Plugin -->
-	<script src="<?php echo site_url('common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js')?>"></script>
+	<script src="<?php echo site_url('common/theme/scripts/plugins/notifications/Gritter/js/jquery.gritter.min.js')?>"></script>	
 	
 	<!-- Notyfy Notifications Plugin -->
 	<script src="<?php echo site_url('common/theme/scripts/plugins/notifications/notyfy/jquery.notyfy.js')?>"></script>
@@ -701,7 +698,7 @@
 	<script src="<?php echo site_url('common/theme/scripts/demo/themer.js')?>"></script>
 	
 	<!-- Twitter Feed -->
-	<script src="<?php echo site_url('common/theme/scripts/demo/twitter.js')?>"></script>
+	 <!--<script src="<?php echo site_url('common/theme/scripts/demo/twitter.js')?>"></script> -->
 	
 	<!-- Easy-pie Plugin -->
 	<script src="<?php echo site_url('common/theme/scripts/plugins/charts/easy-pie/jquery.easy-pie-chart.js')?>"></script>
@@ -728,6 +725,7 @@
 	<!-- Bootstrap Image Gallery -->
 	<script src="<?php echo site_url('common/theme/scripts/plugins/gallery/load-image/js/load-image.min.js')?>"></script>
 	<script src="<?php echo site_url('common/bootstrap/extend/bootstrap-image-gallery/js/bootstrap-image-gallery.min.js')?>" type="text/javascript"></script>
+	<script src="<?php echo site_url('common/theme/scripts/demo/notifications.js')?>"></script>
 
 	<!-- Dashboard Demo Script -->	
 	

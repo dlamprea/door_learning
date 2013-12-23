@@ -15,10 +15,11 @@
 |
 */
 $config['base_url']	= "http://" . $_SERVER['HTTP_HOST'] . "/door_learning/";
+$config['tittle']	= "Learning";
 
 
 $config['auth_mode'] =  "DATABASE";	# LDAP o DATABASE
-$config['dev_mode'] =  TRUE;		# Saltarse la validacion en el LDAP
+$config['dev_mode'] =  false;		# Saltarse la validacion en el LDAP
 
 /*
 |--------------------------------------------------------------------------

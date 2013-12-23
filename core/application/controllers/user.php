@@ -69,7 +69,7 @@ class user extends CI_Controller {
         $arrUsuario['last_name'] = $_POST['lastname'];
         $arrUsuario['image'] = $this->image_lib->dest_image;        
         $arrUsuario['identification'] = $_POST['idenficacion'];
-        $arrUsuario['password'] = $_POST['password'];
+        $arrUsuario['password'] = md5($_POST['password']);
         $arrUsuario['email'] = $_POST['email'];
         $arrUsuario['phone'] = $_POST['phone'];
         $arrUsuario['mobile_phone'] = $_POST['celphone'];
